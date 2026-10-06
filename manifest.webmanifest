@@ -1,0 +1,17 @@
+{
+  "name": "Thesis",
+  "short_name": "Thesis",
+  "description": "Короткие темы вместо ленты соцсетей",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EFEDEA",
+  "theme_color": "#FFC341",
+  "icons": [
+    { "src": "thesis-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "thesis-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "thesis-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "thesis-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

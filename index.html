@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Thesis</title>
+<meta name="theme-color" content="#FFC341">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Thesis">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23FFC341'/><rect x='22' y='27' width='56' height='14' rx='6' fill='%23232227'/><rect x='43' y='27' width='14' height='49' rx='6' fill='%23232227'/><circle cx='71.5' cy='68.5' r='7.5' fill='%23D4472A'/></svg>">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAKvklEQVR42u2da4hd1RXH/2udc+65r7kzSaaJNS9jatUYk9AKYq2P+AAttNqmEgJB6IP2g9QiCgWhUCxKoZ+V0g/tB0ultLRgqQWrYEhbra8+CE2MJWnUJBMnybzu85yz9+qHO2p95TV37pnM/f+4X2Y+XO7d+3fWWWvftc8W270VhHwUyiEglINQDkI5COUglINQDkI5COUglINQDkIoB6EchHIQykEoB6EchHIQykEoB6EchFAOQjkI5SCUg1AOQjkI5SCUg1AOQjkIoRyEchDKQSgHoRyEchDKQSgHoRyEchDKQQjlIJSDUA4yn4QL6tN4gxnMBnEmRCACFcrxIZyHCrQgiGRAw5kHMkPHnCFQygEAs3EiqCoyO/Rmuv+t7MDRLHMmgsGJIAKsWR5etjb61OooiAUN7z1UB1sO76EFgeD3uxpPPNN4eX8y3fCZG8jsT1Er64aLortuKO+8paoxXNOCIFdlczypyXtoUcYn3AOPTTz1QisMpVyUUCEyiHKYwXm0OtZO7IbNxUe+NXLZxQVX9zn6kZscXTPeOJrteOj4/sPpspp2R2fQq0eFCibrvlbWxx8cvXpL0dV9XimI5nWVSEGOT7gdDx0/MJaNDmvmaMbsNZM5jFS1k9rOR47v2dcJSuL9QMkBQPG9n0y8djgdqUqa0Yr3kTmUYmm07b5HJzotk2Bg5HAOWtFnX2g9+XxrtKY04+P8GK7Iq68nP/9DXSrq3GDIIQI4e/zZRqAymOtdZ34VVYryxHON9pTTMIfCvt9yeIPGcuRI9uLeTqWY2930/Mg/DMVYXj+c/X1fInmMVb/lMANCvH44m2xYEICB4zTTI0hS23MoRZBDlM1DjkAOjqVpZiqc/TMo6wQHj2awHJZ/8qlWMt5NzofhykcOhozzYrjYz0EYORg5zhc5uFJ+XgxXHnIYlg6pCuvYM4gZAjMsrSkEi7+UFQUyu3RVVIq5AnYm1xFUZfP6CN4Wf+RQARK7dE247pNhJzFh9nHKVCNNsXxYr7qkgCSHxjDt/xd2GaLh4LarSvW2hQEd+FiCAPWWv35TvHxl6JIc1gxzyDlUYW372u3VtSuCVofrpB+bbTiPUiz33DEEl0/Bks+vsr5jKy4MH7p7ZLppMqh9gacmDDA+6e/fVrtiQ+xalkuzcT6lbBDAzfgvbi0/uKM2PuGBhdKMvxBQRRDg6Am/8+byd7bXXMPn1YaeW/d5oHAte+DukUJBfvTLaRFUSwLAbF5K3N7WgfMR6uSdt220LcnsnjurP/zGCDJTyy2y5tl9jm57R1X/+kr74V9Mvbo/ybwVQolCmQ8XezXE89QInTnrpBYorriocP/22heuK1vTw/K85+YsBwDnEVTUd/yuf3T++LfW3jfSsZOux6MvaHUsSXtQORsQKiol7Xl8u2CpblxXuOWzxa1bilFFfd2r5PxDQ/5yoLtNQYGSQAVtPzPjnfVsWLryPfjoyd/sbo5UdC7aqaLZsk3rC098f5n1uoIYrirKCgNa3rkFkYQtiL2yqjDANwwwVQwN9XRgPFDVQtSbTioDwgDDNUXPO34d3IyfTUi5V/YD6di7I2I97Ud3HkHWy4TUDJah55FDZMGVbAvrEQzzUQt0H23Q+08oi7/xgMsLhHIQykEoB6EchHIQykEoB6EchHIQykEI5SCUg1AOQjkI5SCUg1AOQjkI5SCUgxDKQSgHoRyEchDKQSgHoRyEcpBFR8ghyA1778EQs88BEMox4Ep4AJAAiET0HSE8kBnc7NFMC8QSytFHPKCQkkBgDZ+MZ8mEMw8YopoWlgTBcCAqSLxlED72aaAChhQFzup7O5P/ajXfTNMp5xMzgwASIqxovCIa3hAPbywFIwFaHpZzCKEc/cgtIJCKNl5rj/1ppnkoNW8aiQSisXSzDTNkTUv3d2b2td9+rjF6bWX02goESCzHmoFyzL8ZCgRy7Knp8efqZgiKAogZYO/PSQNoIBDJGu7Ik1Mz+zurtg1HI4F1LK9bDEvZea5HBAjkrV9Pjj09IwUJimIe3TzjI4sX85BAwiGd2d8+8NMTyQknscBTjkV5P4nl8G+nTrzUjGoKmy1VTq+UQ1jRZMId/NmJbMohyudYK8oxnxloWSeeb554oRFV1c7yuaXmEJSkM54d/t0UeFtZZEFDImTHs7FnZrR4js/H7caPqX+3J19uoaTmKcficMOAgo7vrqdTTsNzvymYQSN5e1fdN7wElGNxhI0Q7qSb2tPRWOf08GSDFqQ9ns3sayOWPgcPyjFPYUPq/+0kk05D9CCXNEzvbcMYORYJ0jyU9OSJ62aQEK2jmTX7fWehHPODt+SkQ08ONzRIIFndZXWPAP2MH5RjHoKGAqml0160N6c1iMJ3LKt79PcoTcoxj2npQn9DypFT9ID0cFnTIAoJ+71OqgMzWf17K/NAJIURNd+bo17MQ4sa1rTPJ9oPihzO+vtWKsUVYY8yDpizwpIgrChcXzs8Fr8cZoBgdFitF8dwerNlNUV4qhVxEcBZ5aJYQp27HiKwzMprIxSVi2DzwoY10dwvORWkGTZdXEAk3p/yxpNYaU2hdGHok7mec2kGLcjIxhKc9fmM2cUvhyqQ2DWXx0trQebmOk9xQa7fGJ92nsxDYll2ddmyOc2oKHzbhi4pltYWrGOgHD3+hgLfsZWrwms2FKabPgjOXbJG265cF33m8oK17NQnOYoCbb/kqnJ1fexa597KZR4SYcWt1XyGbnBWHe7bVivF6v05Xn4qaKf23TuHwpL6M+vZgWDll2oai8/OJZGUAFnDX3DzUHF1AR3r/7nlAyGHKlzTNl0Z3/eVoWMTLjr7xtlCiGMTfudNlduvL/uGP6MDYAXWsXhVYfVdI+bN/NnsNhCIIp32o5+rjN5YtZbPZaIGJXIEAdyMv3d77Zu3V4+c9IFC9UwDRhRgbMLftCV++NtLfHIWIUAU1vS1LaW1O5YI4NomwelDiCjgkdX9Jz5fWblt2FLLa39C8IOvrxsQPwQQw23XlBtN+/OejveII1GdrW+7ZxO/+1KFKlTQTmyqYdtvLD92/2i1KEjPLoEQgSVWXF2oXRK3j6SdtzMRSCCikNnPNPuS7ifxcC0fFPXCO4aX3zqExCS/3Stiu7diYOiueUhZn/5L88e/mt5zMM2cRaGEH8pSnUOSWaD49Oro3i8PffXmClI7941oHiiKJXbyxebJl5rtY5k5E5V3A4l5mDMYouFg+Iri6HXVwooQTZ/vpqbBkqObJ3qDVtS1/K5/tp9+pf2ft9KxCf//AcYbRmu6YV20dXPxhs3FeEit4THHc9S7AaCk1vSNg536gaQ9liWTDg6AhdUgXh6W10ZD6+NwNERqlljuOyIHT47uleyhCpQUCnSs0/Ly/nmMi4KiwoCWdw5Bj+ZpNi2NBSrIzNqzu5okFkTaXT2z1BbIXuoB3fGmCgN8w8OgirggH0xPHNy0h0C1Z2bMJpuAtQwwEUiIWQscLJ0NTrJgioTB3Q4peG/WP/gLiIcIgnnryXtv+u2j/gnKscBEOeXfAwqbfQjlIJSDUA5COQjlIJSDUA5COQjlIJSDEMpBKAehHIRyEMpBKAehHIRyEMpBKAchlINQDkI5COUglINQDkI5COUglINQDkIoB6EchHIQykEoB6EchHIQykEWDf8DjmlCl7xnFTYAAAAASUVORK5CYII=">
+<link rel="manifest" href="manifest.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{
+  --bg:#EFEDEA;
+  --paper:#FFFFFF;
+  --ink:#232227;
+  --muted:#6E6A67;
+  --line:#DAD6D1;
+  --yellow:#FFC341;
+  --good-bg:#D5EBA0;--good-ink:#2C5410;
+  --bad-bg:#F8CFC6;--bad-ink:#8A2410;
+  --c:#FFC341;--on:#232227;--soft:#FFF0C7;
+  --font:"Manrope","Plus Jakarta Sans","Poppins","Avenir Next","Nunito Sans","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 16px/1.5 var(--font)}
+button,textarea{font:inherit;color:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:disabled{cursor:default}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+#app{max-width:600px;margin:0 auto;padding:20px 18px 150px;min-height:100vh}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+svg{display:block}
+
+/* Кнопки */
+.primary,.secondary,.accent{
+  display:block;width:100%;min-height:58px;padding:12px 22px;border-radius:999px;
+  font-weight:700;font-size:17px;text-align:center;border:2px solid transparent;
+}
+.primary{background:var(--ink);color:#fff}
+.accent{background:var(--yellow);color:var(--ink)}
+.secondary{background:transparent;color:var(--ink);border-color:var(--ink)}
+.primary:active,.secondary:active,.accent:active,.round:active{transform:scale(.98)}
+.round,.icon-btn{
+  flex:none;display:grid;place-items:center;border:0;border-radius:50%;background:var(--paper);color:var(--ink);
+}
+.round{width:58px;height:58px}
+.icon-btn{width:44px;height:44px}
+.round[disabled]{opacity:.35}
+.textbtn{background:none;border:0;padding:12px 0;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:4px;min-height:48px}
+
+/* Фиксированные панели */
+.footer,#dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:10;
+  padding:16px 18px calc(14px + env(safe-area-inset-bottom));
+  background:linear-gradient(to top,var(--bg) 70%,rgba(239,237,234,0));
+}
+.footer-in,.dock-in{max-width:564px;margin:0 auto;display:flex;gap:12px}
+#dock[hidden]{display:none}
+
+/* Главный экран */
+.brand{font-size:36px;margin:2px 0 0}
+.lead{margin:6px 0 0;color:var(--muted);font-size:17px}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:22px 0 4px}
+.day{text-align:center;font-size:13px;color:var(--muted);font-weight:600}
+.day b{display:grid;place-items:center;width:100%;max-width:46px;aspect-ratio:1;margin:6px auto 0;border-radius:50%;
+  background:var(--paper);color:var(--ink);font-size:16px;font-weight:700}
+.day.on b{background:var(--yellow)}
+.day.today{color:var(--ink)}
+.day.today b{box-shadow:0 0 0 3px var(--ink)}
+.week-note{margin:10px 0 0;font-size:14px;color:var(--muted)}
+.warn{background:#FFE9A8;padding:12px 14px;border-radius:16px;font-size:14px;margin:16px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;margin:28px 0 12px}
+.sec-head h2{font-size:24px}
+.sec-head span{font-size:14px;color:var(--muted);font-weight:600}
+.dlist{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.dcard{
+  display:grid;grid-template-columns:1fr auto;align-items:end;gap:2px 12px;width:100%;
+  padding:20px 20px 22px;border:0;border-radius:28px;text-align:left;background:var(--c);color:var(--on);
+}
+.dname{font-size:25px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.dpct{grid-row:1 / span 2;grid-column:2;font-size:38px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;align-self:center}
+.dmeta{font-size:15px;opacity:.85;font-weight:600}
+.pill{grid-column:1 / -1;display:block;height:14px;margin-top:14px;border-radius:999px;background:color-mix(in srgb,var(--on) 22%,transparent);overflow:hidden}
+.pill i{display:block;height:100%;border-radius:999px;background:var(--on);transition:width .5s ease}
+
+/* Дисциплина */
+.dhead{background:var(--c);color:var(--on);border-radius:28px;padding:16px 20px 22px;margin-top:4px}
+.dhead .icon-btn{margin-bottom:14px}
+.dhead h1{font-size:34px}
+.dhead .dmeta{margin:6px 0 0;display:block}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 0;padding:0;list-style:none}
+.tile{
+  position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:12px;
+  width:100%;height:100%;min-height:150px;padding:16px;text-align:left;
+  background:var(--soft);border:2px solid transparent;border-radius:24px;color:var(--ink);
+}
+.tile .tn{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.tile .tt{font-size:14px;line-height:1.3;font-weight:600;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.tile .ts{font-size:13px;font-weight:700;min-height:18px}
+.tile.read{border:2px dashed var(--ink)}
+.tile.passed{background:var(--c);color:var(--on)}
+.tile .ok{position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:50%;background:var(--on);color:var(--c);display:grid;place-items:center}
+.empty{margin:26px 0;color:var(--muted);font-size:17px}
+
+/* Шаги изучения */
+.topbar{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.pbar{flex:1;height:14px;border-radius:999px;background:rgba(35,34,39,.13);overflow:hidden}
+.pbar i{display:block;height:100%;border-radius:999px;background:var(--c);box-shadow:inset 0 0 0 1px rgba(35,34,39,.18);transition:width .35s ease}
+.pcount{flex:none;min-width:48px;text-align:right;font-weight:700;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ttl{font-size:30px;margin:0 0 6px}
+.ttl-sm{margin:0 0 4px;font-size:13px;line-height:1.3;font-weight:700;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ttl-sm.meta{margin:0 0 8px;font-size:11px;font-weight:600}
+.meta{margin:0 0 16px;color:var(--muted);font-size:15px;font-weight:600}
+.badge{display:inline-block;margin:0 0 14px;padding:4px 12px;border-radius:999px;font-size:13px;font-weight:700;background:var(--ink);color:#fff}
+.badge.soft{background:transparent;color:var(--ink);border:2px dashed var(--ink)}
+.card{
+  background:var(--cb);color:var(--cf);border-radius:28px;padding:22px 22px 24px;
+  -webkit-user-select:text;user-select:text;
+}
+.card{font-size:17px}
+.card p{margin:0;font-size:1em;line-height:1.55;font-weight:500}
+.card ::selection,.card::selection{background:#FFC341;color:#232227}
+.chip{display:inline-block;margin-bottom:12px;padding:4px 12px;border-radius:999px;font-size:14px;font-weight:700;border:2px solid currentColor;line-height:1.3}
+.card h2{font-size:1.6em;margin-bottom:10px}
+.slide{animation:slide .28s ease}
+@keyframes slide{from{opacity:0;transform:translateX(22px)}to{opacity:1;transform:none}}
+.hintline{margin:14px 4px 0;font-size:14px;color:var(--muted)}
+.sheet{position:fixed;left:18px;right:18px;bottom:calc(96px + env(safe-area-inset-bottom));z-index:12;max-width:564px;margin:0 auto;background:#fff;border-radius:24px;padding:14px;box-shadow:0 10px 30px rgba(35,34,39,.3)}
+.sheet[hidden]{display:none}
+.sheet textarea{margin:0 0 10px}
+.vbox{display:block}
+.vis{display:block;width:100%;height:auto;max-height:32vh;margin:0 auto}
+.vis text{font-family:inherit}
+.cap{margin:12px 0 0;font-size:.9em;font-weight:600;line-height:1.4}
+.legend{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px;font-size:.9em;font-weight:700}
+.legend.two{grid-template-columns:1fr 1fr}
+.legend li{display:flex;gap:8px;align-items:center}
+.legend i{width:14px;height:14px;border-radius:4px;flex:none;border:2px solid #232227}
+.legend b{flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#FFC341;border:2px solid #232227;font-size:12px}
+.vtable{width:100%;border-collapse:collapse;font-weight:700}
+.vtable th{padding:8px 10px;text-align:left;border-radius:10px}
+.vtable td{padding:10px 10px 14px;font-size:1.08em;letter-spacing:.02em}
+.tl{list-style:none;margin:6px 0 0 8px;padding:0 0 0 20px;border-left:3px solid #232227;font-weight:600}
+.tl li{position:relative;padding:0 0 14px 4px;line-height:1.35}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:'';position:absolute;left:-31px;top:3px;width:14px;height:14px;border-radius:50%;background:#FFC341;border:3px solid #232227}
+.tl b{display:block;font-weight:800}
+
+
+/* Заметки */
+textarea{
+  width:100%;min-height:96px;padding:14px 16px;border:2px solid var(--line);border-radius:20px;
+  background:var(--paper);resize:vertical;margin:10px 0;line-height:1.45;font-weight:500
+}
+textarea:focus{border-color:var(--ink);outline:none}
+.items{margin-top:16px;display:grid;gap:12px}
+.item{padding:14px 16px;background:var(--paper);border-radius:20px}
+.item.q{border-left:8px solid var(--yellow)}
+.item p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.item .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:8px;font-size:13px;color:var(--muted)}
+.lnk{background:none;border:0;padding:8px 0;font-size:14px;color:var(--muted);text-decoration:underline;text-underline-offset:3px;min-height:40px;flex:none}
+.lnk.danger{color:#B3260F;font-weight:700}
+.topic-link{background:none;border:0;padding:0;text-align:left;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.empty-sm{color:var(--muted);font-size:15px;margin:6px 0 0}
+.sub{font-size:22px;margin:26px 0 4px}
+.tabs{display:flex;gap:8px;margin:18px 0 6px}
+.tab{flex:1;min-height:48px;border:2px solid var(--ink);border-radius:999px;background:transparent;font-weight:700}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff}
+
+/* Плашка цитаты */
+#quotebar{
+  position:fixed;left:0;right:0;bottom:calc(96px + env(safe-area-inset-bottom));z-index:20;padding:0 18px;
+  opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .18s,transform .18s;
+}
+#quotebar.show{opacity:1;transform:none;pointer-events:auto}
+.quote-btn{display:block;max-width:300px;margin:0 auto;min-height:50px;padding:10px 22px;border-radius:999px;
+  background:#fff;color:var(--ink);border:2px solid var(--ink);font-weight:700;box-shadow:0 8px 22px rgba(35,34,39,.28)}
+
+/* Тест */
+.qcard{background:var(--c);color:var(--on);border-radius:28px;padding:24px 22px 26px;margin-bottom:16px}
+.qcard h2{font-size:25px}
+.opts{display:grid;gap:10px}
+.opt{
+  display:block;width:100%;text-align:left;padding:15px 18px;min-height:58px;font-size:17px;font-weight:600;
+  background:var(--paper);border:2px solid transparent;border-radius:20px;
+}
+.opt.ok{background:var(--good-bg);border-color:#7FB02C;color:var(--good-ink)}
+.opt.no{background:var(--bad-bg);border-color:#D4472A;color:var(--bad-ink)}
+.opt.dim{opacity:.5}
+.fb{position:fixed;left:0;right:0;bottom:0;z-index:15;padding:20px 18px calc(18px + env(safe-area-inset-bottom));border-radius:28px 28px 0 0}
+.fb.ok{background:var(--good-bg);color:var(--good-ink)}
+.fb.no{background:var(--bad-bg);color:var(--bad-ink)}
+.fb-in{max-width:564px;margin:0 auto}
+.fb h3{font-size:22px;margin-bottom:4px}
+.fb p{margin:0 0 14px;font-size:16px;font-weight:500}
+.result{background:var(--c);color:var(--on);border-radius:28px;padding:26px 22px}
+.result .big{font-size:64px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.result p{margin:12px 0 0;font-size:18px}
+.review{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.review li{padding:14px 16px;background:var(--paper);border-radius:20px;border-left:8px solid var(--line);font-weight:600}
+.review li.ok{border-left-color:#7FB02C}
+.review li.no{border-left-color:#D4472A}
+.review small{display:block;margin-top:4px;color:var(--muted);font-size:14px;font-weight:500}
+.stack{display:grid;gap:10px;margin-top:20px}
+
+#toast{
+  position:fixed;left:50%;top:calc(14px + env(safe-area-inset-top));transform:translate(-50%,-20px);
+  background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:15px;font-weight:600;
+  opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:30;max-width:90vw;text-align:center;
+}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+
+html.noscroll,html.noscroll body{overflow:hidden;height:100%}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ext{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 14px;border-radius:999px;border:2px solid currentColor;color:inherit;font-weight:700;font-size:.88em;text-decoration:none}
+.ext svg{flex:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (min-width:520px){.grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<div id="app" aria-live="polite">Загрузка…</div>
+<div id="dock" hidden><div class="dock-in">
+  <button class="round" data-go="/notes" aria-label="Заметки и цитаты"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M9 11h6M9 15h4"/></svg></button>
+  <button class="accent" data-act="random"><svg style="display:inline-block;vertical-align:-4px;margin-right:8px" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>Случайная тема</button>
+</div></div>
+<div id="quotebar"><button class="quote-btn" data-act="save-quote">Сохранить цитату</button></div>
+<div id="toast" role="status"></div>
+<script>
+const TOPICS={arch:[],fashion:[],social:[],science:[],psych:[]};
+TOPICS.arch.push({
+  id: 'arch-1', n: 1,
+  title: 'Пять отправных точек современной архитектуры Ле Корбюзье',
+  body: [
+`Ле Корбюзье — творческий псевдоним швейцарско-французского архитектора Шарля-Эдуара Жаннере (1887–1965). В 1920-е годы вместе с двоюродным братом и соавтором Пьером Жаннере он сформулировал пять принципов, которые должны были задать облик «новой архитектуры». Их называют «пятью отправными точками» или «пятью пунктами». Они были опубликованы в 1926–1927 годах и показаны на практике на выставке жилых домов Вайсенхоф в Штутгарте в 1927 году, где Ле Корбюзье построил два здания.`,
+`Важно понимать: это не набор модных приёмов, а следствие нового строительного материала — железобетона, то есть бетона с вложенной в него стальной арматурой. Именно материал позволил переосмыслить, каким может быть дом.`,
+`## Что было до железобетона`,
+`Веками дом держался на несущих стенах — каменных или кирпичных. Стена одновременно и защищала, и удерживала всё здание, поэтому она была толстой, а окна вырезались в ней небольшими проёмами. Планировка этажей подчинялась конструкции: перегородки приходилось ставить там, где есть опора снизу, а облик фасада был жёстко связан с тем, что находится за ним.`,
+`Железобетон позволил разделить эти функции: здание держит каркас из колонн и перекрытий, а стены становятся лишь оболочкой. В 1914–1915 годах Ле Корбюзье изобразил эту идею в схеме «Дом-Ино»: три плоские бетонные плиты, шесть тонких колонн и лестница — больше ничего. Название обыгрывает латинское domus («дом») и слово «домино». Всё остальное — стены, окна, перегородки — можно было расставлять свободно. Пять пунктов — это развёрнутые выводы из этой схемы.`,
+`## Пять пунктов по порядку`,
+`Первый пункт — пилотис. Так называют тонкие колонны, которые поднимают здание над землёй. Первый этаж освобождается: под домом можно оставить сад, проезд или стоянку, а земля не «съедается» застройкой. Кроме того, жилые помещения оказываются выше от сырости грунта.`,
+`Второй — крыша-сад. Вместо скатной крыши — плоская, пригодная для использования: на ней можно устроить террасу, солярий или посадить зелень. Ле Корбюзье утверждал, что слой земли защищает бетон от резких перепадов температуры, а сама крыша «возвращает» людям зелень, которую здание отняло у участка.`,
+`Третий — свободный план. Когда нагрузку несут колонны, внутренние перегородки перестают быть конструктивно важными. Их можно ставить где угодно, и на каждом этаже планировка может быть своей. Комнаты перетекают одна в другую, а не нарезаются по готовой схеме стен.`,
+`Четвёртый — ленточное окно. Раз стена ничего не несёт, окно можно протянуть вдоль всего фасада. Это даёт больше света и более равномерное освещение комнаты, чем отдельные вертикальные проёмы. По этому пункту у Ле Корбюзье был принципиальный спор с французским архитектором Огюстом Перре, у которого он работал в юности: Перре отстаивал вертикальное окно как более естественное для человеческого взгляда.`,
+`Пятый — свободный фасад. Колонны можно отодвинуть от наружной стены вглубь здания, а перекрытия вынести консолью. Тогда фасад перестаёт быть несущим, и его можно делать почти любым — сплошным остеклением или гладкой плоскостью, без обязательной симметрии и классического ряда колонн.`,
+`## Вилла Савой — манифест из белого бетона`,
+`Все пять пунктов Ле Корбюзье собрал в одном здании — вилле Савой в Пуасси близ Парижа (1928–1931). Это загородный дом семьи страхового предпринимателя Пьера Савоя. Белый параллелепипед на тонких столбах словно парит над лугом. Входная зона отодвинута вглубь, основные комнаты расположены наверху и опоясаны ленточными окнами, а этажи связывает пандус — любимое средство Ле Корбюзье, превращающее подъём в прогулку. На крыше — терраса с изогнутыми стенками, напоминающими палубу океанского лайнера: корабли он очень любил.`,
+`В те же годы стала знаменитой формула «дом — машина для жилья» из книги «К архитектуре» (1923). Её часто понимают как призыв к холодному, механическому жилью. Автор имел в виду другое: дом должен быть так же продуман и функционален, как хороший станок или автомобиль.`,
+`## Цена идеалов`,
+`Безупречная на фотографиях вилла плохо работала в быту. Владельцы жаловались на протечки плоской крыши и сырость и писали Ле Корбюзье недовольные письма. Во время Второй мировой войны здание пострадало, затем было заброшено, и городские власти планировали снести его ради строительства школы. Спасло общественное давление: в 1965 году вилла получила статус исторического памятника Франции, а в 2016 году вошла в список Всемирного наследия ЮНЕСКО вместе с другими работами архитектора.`,
+`Критика пяти пунктов сводится к тому, что принципы хороши не всегда. Плоские крыши в дождливом климате требуют очень надёжной гидроизоляции, большие ленточные остекления теряют тепло, а свободный план бывает неудобен людям, которым нужны замкнутые комнаты и хорошая звукоизоляция.`,
+`## Влияние`,
+`Тем не менее идеи оказались чрезвычайно живучими. Здания на опорах, свободная планировка, остекление на всю ширину фасада стали нормой в XX веке. Стеклянные «шторы», подвешенные к каркасу небоскрёбов, — прямые наследники «свободного фасада». «Пять пунктов» остаются самым кратким конспектом того, что изменил железобетон: здание перестало быть стеной и стало скелетом.`
+  ],
+  quiz: [
+    { q: 'Что такое «пилотис» в архитектуре Ле Корбюзье?',
+      ok: 'Тонкие колонны, поднимающие здание над землёй',
+      bad: ['Декоративные пилястры на фасаде', 'Подвальный этаж для хозяйственных нужд', 'Стеклянный купол над лестницей'],
+      e: 'Пилотис освобождают первый этаж: под домом остаётся сад, проезд или стоянка.' },
+    { q: 'Что НЕ входит в «пять отправных точек» Ле Корбюзье?',
+      ok: 'Симметричный фасад с колоннадой',
+      bad: ['Свободный план', 'Ленточное окно', 'Крыша-сад'],
+      e: 'Пять пунктов: пилотис, крыша-сад, свободный план, ленточное окно, свободный фасад. Симметричная колоннада — наоборот, классическая традиция.' },
+    { q: 'В каком здании Ле Корбюзье наиболее полно воплотил все пять пунктов?',
+      ok: 'Вилла Савой в Пуасси',
+      bad: ['Дом над водопадом', 'Здание Баухауса в Дессау', 'Центр Помпиду'],
+      e: 'Вилла Савой (1928–1931) считается эталонным воплощением его принципов.' }
+  ]
+});
+
+TOPICS.arch.push({
+  id: 'arch-2', n: 2,
+  title: 'Золотое сечение и Модулор',
+  body: [
+`Золотое сечение — это такое деление отрезка на две части, при котором целое относится к большей части так же, как большая часть относится к меньшей. Численно это отношение равно примерно 1,618 (точнее, (1 + √5) / 2), а в процентах — около 62 % и 38 %. Число обозначают греческой буквой φ (фи). Оно иррационально, то есть его десятичная запись бесконечна и не повторяется.`,
+`## Откуда оно известно`,
+`Это отношение описал ещё Евклид около 300 года до н. э. в «Началах», назвав его «делением в крайнем и среднем отношении». Название «золотое» появилось гораздо позже: обычно его связывают с XIX веком и немецким математиком Мартином Омом. В 1509 году вышла книга монаха и математика Луки Пачоли «О божественной пропорции», для которой Леонардо да Винчи нарисовал многогранники. Именно с неё золотая пропорция вошла в круг интересов художников.`,
+`У золотого сечения есть красивые математические свойства. Если от золотого прямоугольника отрезать квадрат, оставшаяся часть снова окажется золотым прямоугольником, и так можно повторять бесконечно. Отношение диагонали правильного пятиугольника к его стороне тоже равно φ. А если взять числа Фибоначчи (1, 1, 2, 3, 5, 8, 13, 21 и так далее, где каждое число — сумма двух предыдущих), то отношение соседних чисел всё точнее приближается к 1,618: 8/5 = 1,6, 13/8 = 1,625, 21/13 ≈ 1,615.`,
+`## Мифы вокруг золотого сечения`,
+`Часто можно услышать, что золотым сечением пользовались строители египетских пирамид, архитекторы Парфенона и авторы «Моны Лизы». Надёжных доказательств того, что они делали это намеренно, нет: измерения старых зданий обычно допускают погрешность, в которую при желании «вписывается» не только 1,618, но и другие пропорции. Зато известно, что осознанно использовали эту пропорцию в XX веке — например, Сальвадор Дали в картине «Тайная вечеря» (1955), холст которой имеет форму золотого прямоугольника.`,
+`Числа Фибоначчи действительно встречаются в природе, например в спиралях семян подсолнечника или чешуек шишки. Это следствие того, как растение оптимально упаковывает новые элементы по мере роста, но это не значит, что «всё прекрасное построено по φ».`,
+`## Модулор: попытка измерить архитектуру по человеку`,
+`Самую известную попытку превратить золотое сечение в рабочий инструмент архитектора предпринял Ле Корбюзье. С 1943 года он вместе с небольшой группой сотрудников разрабатывал систему «Модулор» (от французских module — «модуль» и section d'or — «золотое сечение»). Первая книга вышла в 1948 году, вторая — в 1955-м. Цель была амбициозной: создать шкалу размеров, одновременно связанную с ростом человека, математически гармоничную и пригодную как для метрической, так и для дюймовой систем.`,
+`За основу взяли фигуру человека. Сначала это был средний француз ростом 175 см, но потом Ле Корбюзье остановился на росте 183 см (шесть футов). По его собственному рассказу, причина в том, что герои английских детективов — красавцы-полицейские — в книгах всегда имеют рост шесть футов. Если такой человек поднимет руку, высота до кончиков пальцев составит 226 см. Пуп находится на высоте около 113 см. Эти числа 113, 183 и 226 связаны золотым сечением: 113 + 70 = 183, а 183 / 113 ≈ 1,62.`,
+`Из них строят две шкалы. Красный ряд идёт от 183 см: …, 27, 43, 70, 113, 183, 296 см, и каждое следующее число равно сумме двух предыдущих. Синий ряд строится так же, но от удвоенного значения 226 см: …, 33, 53, 86, 140, 226 см. Два ряда нужны для гибкости: одна золотая последовательность даёт слишком редкие шаги, а комбинации красных и синих размеров дают больше удобных промежуточных значений высоты стола, потолка, ширины прохода.`,
+`## Где применили`,
+`Модулор лёг в основу «Жилой единицы» в Марселе (1947–1952) — большого жилого дома, в котором высота многих помещений равна 226 см, а на бетонной стене отпечатана сама фигура Модулора. Систему использовали и при проектировании города Чандигарх в Индии. Ле Корбюзье считал, что Модулор помогает тому, чтобы «хорошее было просто, а плохое — трудно» — по его словам, так оценил систему физик Альберт Эйнштейн в 1946 году.`,
+`## Ограничения`,
+`У Модулора есть очевидные границы. Он рассчитан на рост взрослого мужчины, а реальные люди различаются: пропорции, удобные для одних, ограничивают других. Это не помешало системе остаться ярким примером попытки связать архитектурный размер с телом, а не с абстрактной сеткой. Сегодня Модулор интересен прежде всего как идея: размеры дома должны иметь человеческую меру.`
+  ],
+  quiz: [
+    { q: 'Чему приблизительно равно золотое сечение?',
+      ok: 'Около 1,618',
+      bad: ['Около 3,14', 'Около 1,414', 'Около 2,718'],
+      e: 'φ = (1 + √5) / 2 ≈ 1,618. Другие числа — это π, √2 и число e.' },
+    { q: 'Какой рост человека Ле Корбюзье в итоге положил в основу Модулора?',
+      ok: '183 см (шесть футов)',
+      bad: ['160 см', '175 см', '200 см'],
+      e: 'Сначала он брал 175 см, но затем остановился на 183 см — шести футах.' },
+    { q: 'Зачем в Модулоре две шкалы — красная и синяя?',
+      ok: 'Чтобы получить больше удобных промежуточных размеров',
+      bad: ['Красная — для жилых зданий, синяя — для промышленных', 'Красная — для мужчин, синяя — для женщин', 'Красная — для фасадов, синяя — для крыш'],
+      e: 'Одна золотая последовательность даёт слишком редкие шаги, а две шкалы вместе дают гибкий набор размеров.' }
+  ]
+});
+TOPICS.arch.push({
+  id: 'arch-3', n: 3,
+  title: 'Триада Витрувия: прочность, польза, красота',
+  body: [
+`Марк Витрувий Поллион — римский архитектор и инженер I века до н. э. Он служил в армии Юлия Цезаря, где строил и обслуживал осадные машины и метательные орудия, а позже, уже в правление Октавиана Августа, написал трактат «Десять книг об архитектуре». Это единственный сохранившийся архитектурный трактат античности, и именно из него в Новое время европейцы узнали, как строили и думали о строительстве древние греки и римляне.`,
+`Самая известная мысль Витрувия содержится в первой книге: хорошее здание должно обладать тремя качествами. По-латыни они называются firmitas, utilitas и venustas — прочность, польза и красота. Эту формулу называют триадой Витрувия.`,
+`## Прочность`,
+`Прочность (firmitas) означает, что здание стоит долго и не разрушается. Витрувий связывает её с двумя вещами: надёжным основанием и правильным выбором материалов. Во второй книге он подробно описывает кирпич, известь, песок и камень, а также вулканический песок — пуццолану, добавка которой делала римский бетон способным твердеть даже под водой.`,
+`Лучший пример римской прочности — Пантеон в Риме, построенный при императоре Адриане около 118–128 годов н. э. Его купол диаметром около 43 метров остаётся самым большим в мире куполом из неармированного бетона. Он стоит почти две тысячи лет.`,
+`## Польза`,
+`Польза (utilitas) — это удобство использования. Помещения должны быть расположены так, чтобы людям было удобно в них находиться и ничто не мешало задуманным занятиям. Для Витрувия это включало и климат: он советует выбирать место для города с учётом ветров и воды, ориентировать дома по сторонам света и учитывать, какие помещения нужны утром, а какие вечером. Отдельные книги трактата посвящены городам, жилым домам, общественным зданиям, театрам с их акустикой, водоснабжению, солнечным часам и строительным машинам.`,
+`## Красота`,
+`Красота (venustas) возникает, когда здание выглядит приятно, а его части подчинены общему замыслу. Для Витрувия красота — не украшение, а результат пропорций. Он вводит понятие «симметрии» в смысле соразмерности частей и целого: размеры деталей должны выражаться через единый модуль, например диаметр колонны.`,
+`Самым совершенным образцом пропорций, по Витрувию, является человеческое тело. Храм должен иметь соразмерность частей такую же, как у хорошо сложённого человека. Ради такой аналогии он даже приписывает колоннам характер: дорическая похожа на сильного мужчину, ионическая — на стройную женщину, а коринфская напоминает девушку. Около 1490 года Леонардо да Винчи нарисовал знаменитого «Витрувианского человека» — фигуру с раскинутыми руками, вписанную в круг и квадрат. Рисунок иллюстрирует описание пропорций тела из третьей книги трактата. Сегодня оригинал хранится в Галерее Академии в Венеции и показывается редко, чтобы не повредить бумагу.`,
+`## Как триада попала в современный мир`,
+`Трактат Витрувия знали и в Средние века, но особое значение он получил в эпоху Возрождения. Первое печатное издание вышло примерно в 1486 году. Архитекторы вроде Леона Баттисты Альберти и Андреа Палладио опирались на него, изучая античные постройки. Английский дипломат и писатель Генри Уоттон в 1624 году пересказал триаду как «прочность, удобство и наслаждение» в книге «Элементы архитектуры». Благодаря такому переводу фраза закрепилась в английском языке.`,
+`Витрувий перечисляет и другие принципы: порядок, расположение, евритмию (приятный ритм), симметрию, уместность и экономию. Но именно триада из трёх слов оказалась самой цепкой.`,
+`## Когда качества конфликтуют`,
+`Ценность триады в том, что она показывает: хорошее здание — всегда компромисс. Идеально красивый, но неудобный дом проигрывает по пользе. Дешёвый и функциональный, но недолговечный — по прочности. Показательна история дома Фарнсворт (1945–1951), который построил для врача Эдит Фарнсворт архитектор Людвиг Мис ван дер Роэ. Стеклянный дом, поднятый над землёй, считается шедевром красоты, но хозяйка осталась недовольна: бюджет вырос, в доме было жарко и тесно для быта, а берег реки время от времени затапливало. Спор между заказчицей и архитектором дошёл до суда.`,
+`Современные архитекторы часто дополняют триаду. К ней относят экологичность, доступность среды для людей с ограничениями, а иногда и культурный контекст. Но три слова римлянина всё ещё остаются самой простой проверкой для любой постройки: стоит ли она, служит ли людям и радует ли глаз.`
+  ],
+  quiz: [
+    { q: 'Какие три качества хорошего здания называет Витрувий?',
+      ok: 'Прочность, польза, красота',
+      bad: ['Экономичность, скорость, простота', 'Симметрия, высота, масштаб', 'Тепло, свет, тишина'],
+      e: 'Латинские firmitas, utilitas, venustas — прочность, польза, красота.' },
+    { q: 'Что иллюстрирует рисунок Леонардо «Витрувианский человек»?',
+      ok: 'Пропорции человеческого тела как образец для пропорций зданий',
+      bad: ['Способ строительства римских акведуков', 'Размеры колонн Парфенона', 'Схему римского города'],
+      e: 'Рисунок основан на описании пропорций тела в третьей книге трактата Витрувия.' },
+    { q: 'Какое здание в тексте приведено как пример римской прочности?',
+      ok: 'Пантеон в Риме',
+      bad: ['Колизей', 'Форум Траяна', 'Дворец Диоклетиана'],
+      e: 'Купол Пантеона — самый большой в мире купол из неармированного бетона.' }
+  ]
+});
+
+TOPICS.arch.push({
+  id: 'arch-4', n: 4,
+  title: 'Принцип «форма следует за функцией» Луиса Салливана',
+  body: [
+`Фраза «форма следует за функцией» известна даже тем, кто никогда не интересовался архитектурой. Её автор — американский архитектор Луис Салливан (1856–1924), один из главных мастеров Чикагской школы. Он написал её в статье «Высотное офисное здание, рассмотренное с художественной точки зрения», опубликованной в 1896 году в журнале «Липпинкотс». Дословно у Салливана: форма всегда следует за функцией, и это закон.`,
+`## Контекст: рождение небоскрёба`,
+`После Великого чикагского пожара 1871 года город отстраивался заново, а земля в центре дорожала. Строители выяснили, что стальной каркас позволяет возводить здания намного выше каменных, а лифты делают верхние этажи пригодными для работы. Так появился небоскрёб. Но он не имел никакого прошлого: ни греческий храм, ни готический собор, ни дворец эпохи Возрождения не подходили как образец для десятиэтажной конторы. Салливан задавался вопросом, как должен выглядеть этот новый тип здания.`,
+`## Что имел в виду Салливан`,
+`Для него ответ был в природе. Он любил наблюдать за растениями и животными: у дуба форма определяется тем, как он растёт, у орла — полётом, и в любой живой форме внешность выражает назначение. Здание, считал он, должно быть устроено так же: наружный вид должен честно показывать, что находится внутри и для чего это нужно.`,
+`Применительно к небоскрёбу он предложил делить фасад на три части. Нижние этажи с магазинами и входами — публичные, их можно сделать более нарядными и открытыми. Средние — одинаковые офисные этажи, их назначение одинаково, поэтому и фасад повторяется одинаково. Верхний этаж и карниз венчают здание, скрывая технические помещения. Вертикальные столбы фасада подчёркивали рост здания вверх. Салливан писал, что высотное здание должно быть высоким «каждым дюймом» и составлять целое от низа до верха.`,
+`## Воплощение: Уэйнрайт-билдинг и другие`,
+`Лучший пример — Уэйнрайт-билдинг в Сент-Луисе (1890–1891), десятиэтажное здание, которое Салливан построил вместе с партнёром Данкмаром Адлером. Вертикальные столбы, которые идут вдоль всего фасада и создают ощущение движения вверх, частично скрывают стальные колонны каркаса, а частично просто подчёркивают вертикаль. Гарантия-билдинг в Буффало (1894–1896) продолжает эту линию. А универмаг Карсон Пири Скотт в Чикаго (1899–1904) показывает другую сторону Салливана: широкие окна для витрин и роскошный чугунный орнамент на нижних этажах.`,
+`## Парадокс: орнамент`,
+`Позднее лозунг Салливана подхватили модернисты и превратили в аргумент против украшений. Но сам автор был мастером орнамента: его чугунные и терракотовые узоры из переплетающихся растительных мотивов считаются одними из лучших в американской архитектуре. Для Салливана орнамент не был лишним. Он считал, что украшение должно рождаться из самой конструкции, как цветок из стебля, а не «приклеиваться» поверх. Ненавидел он не узор, а ложь: когда декор изображает то, чего в здании нет.`,
+`Австрийский архитектор Адольф Лоос в 1908 году пошёл дальше и объявил украшение преступлением. Это уже другая, более радикальная позиция, чем у Салливана.`,
+`## Ученик и судьба`,
+`В фирме Адлера и Салливана с конца 1880-х работал молодой Фрэнк Ллойд Райт, который позже называл Салливана «любимым учителем» (lieber Meister). После 1895 года партнёрство распалось, заказов становилось всё меньше, а в 1920-х Салливан жил в бедности и умер в 1924 году в чикагском отеле. Незадолго до смерти он издал автобиографию «История одной идеи».`,
+`## Что осталось`,
+`Принцип «форма следует за функцией» стал основой функционализма — направления, в котором архитектура 1920–1930-х годов Баухауса, Ле Корбюзье и Миса ван дер Роэ отказывалась от декора ради ясного устройства. У идеи есть и критики. В 1966 году американец Роберт Вентури ответил на лозунг Миса «меньше — значит больше» фразой «меньше — это скучно». А в 1977 году архитектурный критик Питер Блейк выпустил книгу «Форма следует за провалом», где разобрал, сколько функционалистских проектов не справились с жизнью. Но слова Салливана до сих пор помогают задать простой вопрос: почему здание выглядит именно так, как выглядит?`
+  ],
+  quiz: [
+    { q: 'Кому принадлежит фраза «форма следует за функцией»?',
+      ok: 'Луису Салливану',
+      bad: ['Ле Корбюзье', 'Вальтеру Гропиусу', 'Фрэнку Ллойду Райту'],
+      e: 'Салливан сформулировал её в статье 1896 года о высотном офисном здании.' },
+    { q: 'Как Салливан предлагал делить фасад высотного здания?',
+      ok: 'На три части: нижние публичные этажи, одинаковые офисные, венчание',
+      bad: ['На две равные половины по вертикали', 'На десять одинаковых горизонтальных полос', 'Фасад не делится, он должен быть абсолютно гладким'],
+      e: 'Нижняя часть для публики, средняя для офисов, верхняя завершает здание.' },
+    { q: 'Что верно о Салливане и орнаменте?',
+      ok: 'Он сам создавал богатый орнамент, но считал, что тот должен рождаться из конструкции',
+      bad: ['Он полностью отвергал любой декор', 'Он украшал здания только классическими колоннами', 'Он вообще не занимался декором'],
+      e: 'Позже модернисты истолковали лозунг как отказ от украшений, но сам Салливан был мастером орнамента.' }
+  ]
+});
+TOPICS.arch.push({
+  id: 'arch-5', n: 5,
+  title: 'Деконструктивизм и архитектурные эксперименты Захи Хадид',
+  body: [
+`Летом 1988 года в нью-йоркском Музее современного искусства (MoMA) открылась выставка «Деконструктивистская архитектура». Её устроили архитектор Филип Джонсон и критик Марк Вигли. Они показали работы семи архитекторов: Фрэнка Гери, Дэниела Либескинда, Рема Колхаса, Питера Эйзенмана, Захи Хадид, австрийской группы Coop Himmelb(l)au и Бернара Чуми. Хотя эти мастера не составляли единой школы, выставка закрепила за их стилем общее название.`,
+`## Откуда взялось слово`,
+`Название соединяет два источника. Первый — русский конструктивизм 1920-х годов с его динамичными диагоналями, балками и смелыми геометрическими композициями. Второй — философия деконструкции французского мыслителя Жака Деррида, который показывал, как тексты и понятия можно «разбирать», обнаруживая их скрытые противоречия. В архитектуре это не означает слом зданий. Скорее речь о том, что привычные правила композиции — прямой угол, симметрия, чёткое деление на пол, стены и потолок — нарочно нарушаются.`,
+`Типичные приёмы: пересекающиеся объёмы под острыми углами, наклонённые стены, искажённые плоскости, ощущение, будто здание вот-вот рассыплется или взрывается изнутри. Многие такие здания трудно построить, поэтому развитие стиля во многом опиралось на компьютерное проектирование.`,
+`## Заха Хадид: путь к зданиям`,
+`Заха Хадид родилась в 1950 году в Багдаде в образованной семье. Она сначала изучала математику в Американском университете в Бейруте, а в 1972 году переехала в Лондон, где поступила в Архитектурную ассоциацию — школу, где преподавали Рем Колхас и Эли Зенгелис. Позже она работала с Колхасом в бюро OMA. Дипломный проект 1977 года «Тектоника Малевича» — гостиница над мостом через Темзу — был вдохновлён супрематизмом Казимира Малевича и его «архитектонами» — объёмными моделями из блоков.`,
+`Её рисунки и картины 1980-х были настолько выразительными и в то же время сложными для строительства, что Хадид называли «бумажным архитектором». В 1983 году она выиграла конкурс на клуб The Peak в Гонконге, но проект так и не осуществили. Долгое время её идеи существовали только на бумаге. Первым построенным зданием стала пожарная станция для компании Vitra в Вайль-на-Рейне (Германия, 1993). Другой её конкурсный проект, оперный театр в Кардиффе, был выигран в 1994 году, но отменён из-за проблем с финансированием.`,
+`## Здания, которые принесли славу`,
+`Перелом произошёл в 2000-х. В 2004 году Хадид получила Притцкеровскую премию — главную награду в архитектуре — и стала первой женщиной, удостоенной её. Среди её известных построек Центр современного искусства Розенталь в Цинциннати (2003), музей MAXXI в Риме (2009–2010), за который она получила премию Стирлинга, водный центр для Олимпиады 2012 в Лондоне с волнообразной крышей и Центр Гейдара Алиева в Баку (2012).`,
+`Центр Алиева — хорошая иллюстрация её почерка. Площадь перед зданием плавно «поднимается» и превращается в стены и крышу, швов и углов почти нет. Внутри большой зал почти свободен от привычных колонн, пространство перетекает как текучая поверхность. Для создания такой формы потребовались сложные расчёты и пространственный каркас, скрытый под гладкой облицовкой.`,
+`## Критика и спорные моменты`,
+`Здания Хадид часто становились предметом споров. Их упрекали в дороговизне, в том, что форма важнее удобства, и в работе для авторитарных правительств. Проект Национального стадиона для Токио, выигранный её бюро в 2012 году, отменили в 2015-м из-за стоимости и заменили более скромным проектом Кенго Кумы. Но и защитники у стиля есть: они считают, что его ценность в расширении самого представления о том, какой может быть архитектура.`,
+`## Финал`,
+`Заха Хадид умерла в Майами 31 марта 2016 года от сердечного приступа в возрасте 65 лет. Её бюро продолжило работу под руководством Патрика Шумахера, развивая направление, которое он назвал параметризмом: формы создаются алгоритмами, а не вручную. Деконструктивизм как узнаваемое течение стал сходить на нет уже в 1990-х, но его уроки остались — сегодня здание может быть наклонным, изломанным и текучим без ощущения, что оно нарушает правила.`
+  ],
+  quiz: [
+    { q: 'Где и когда прошла выставка «Деконструктивистская архитектура», закрепившая название стиля?',
+      ok: 'В нью-йоркском MoMA, 1988',
+      bad: ['В парижском Центре Помпиду, 1977', 'В Лондонской галерее Тейт, 2000', 'В здании Баухауса в Дессау, 1925'],
+      e: 'Выставку устроили Филип Джонсон и Марк Вигли летом 1988 года.' },
+    { q: 'Из каких двух источников родилось название «деконструктивизм»?',
+      ok: 'Русский конструктивизм и философия деконструкции Жака Деррида',
+      bad: ['Готика и барокко', 'Баухаус и брутализм', 'Модерн и ар-деко'],
+      e: 'Название соединяет русский конструктивизм 1920-х и философию деконструкции.' },
+    { q: 'Какую награду в 2004 году получила Заха Хадид?',
+      ok: 'Притцкеровскую премию — первой из женщин',
+      bad: ['Нобелевскую премию по литературе', 'Премию «Оскар» за лучшую сценографию', 'Премию Стирлинга за Тейт Модерн'],
+      e: 'В 2004 году Хадид стала первой женщиной — лауреатом Притцкеровской премии.' }
+  ]
+});
+
+TOPICS.arch.push({
+  id: 'arch-6', n: 6,
+  title: 'Концепция органической архитектуры Фрэнка Ллойда Райта (Дом над водопадом)',
+  body: [
+`Фрэнк Ллойд Райт (1867–1959) — один из самых влиятельных американских архитекторов. Он сделал популярным понятие «органическая архитектура». Для Райта это не значило, что здание должно быть похоже на растение или животное. Он имел в виду, что здание — как живой организм: все его части связаны друг с другом и с местом, где оно стоит. Дом не должен «стоять на холме» — он должен быть частью холма.`,
+`## Основные принципы`,
+`Первый принцип — единство целого и частей. Форма комнат, мебель, окна, светильники, даже ковры продумываются вместе. Райт нередко сам проектировал мебель и интерьер для своих домов.`,
+`Второй — связь с местом. Здание вырастает из ландшафта: оно использует его рельеф, растения, воду и камень. Райт любил использовать местные материалы и оставлять их естественный вид.`,
+`Третий — честность материала. Камень должен выглядеть как камень, дерево — как дерево, бетон — как бетон. Ни имитации, ни маскировки.`,
+`Четвёртый — «разрушение коробки». В традиционном доме комнаты были замкнутыми ящиками. Райт же стремился к текучему пространству, в котором помещения переходят друг в друга. Он любил приём сжатия и расширения: вход делали низким и тесным, а затем человек попадал в просторную высокую гостиную, и пространство казалось ещё больше.`,
+`Пятый — горизонтальные линии. Широкие низкие крыши с большими свесами, длинные ряды окон и террасы перекликаются с линией горизонта и со слоистой структурой горных пород. Эти принципы Райт отрабатывал в «прерийных домах» начала XX века и «юсонианских» домах 1930-х — недорогих жилищах для американского среднего класса.`,
+`## Дом над водопадом`,
+`Самое известное воплощение этих идей — Фоллингуотер, «Дом над водопадом» в штате Пенсильвания. Его в 1935 году заказал Эдгар Кауфман — владелец питтсбургского универмага — для семейных выходных. На участке у ручья Беар-Ран семья давно отдыхала, и рассчитывала получить дом с видом на водопад. Райт же расположил его прямо над водопадом, так что шум воды стал частью жизни в доме. По рассказам помощников архитектора, увидев участок, он нарисовал основную идею всего за пару часов, когда заказчик ехал к нему в мастерскую. Строительство шло в 1936–1938 годах; архитектору в то время было около 67 лет.`,
+`Дом состоит из ряда бетонных террас-консолей, нависающих над потоком. Они опираются на каменные опоры из местного песчаника, а большой камень, на котором семья любила греться на солнце, Райт оставил выступающим из пола гостиной перед камином. Каменный дымоход — вертикаль, на которую «нанизаны» горизонтальные плоскости. Металлические рамы окон окрашены в красный цвет, который Райт называл «красным чероки». Стёкла в углах сходятся без стоек, так что граница между домом и лесом кажется почти исчезающей.`,
+`## Трудности и реставрация`,
+`Строительство далось тяжело. Бюджет вырос в несколько раз. Кауфман пригласил независимых инженеров, которые усомнились в расчётах консолей и предлагали добавить арматуру. Райт, по преданию, был в ярости и угрожал уйти с проекта, а строители втайне усилили конструкцию. Но даже это не помогло. К концу XX века главная консоль прогнулась примерно на 18 сантиметров. В начале 2000-х годов конструкцию укрепили, натянув внутри бетона стальные тросы — этот метод называется постнапряжением.`,
+`## Значение`,
+`Фоллингуотер вернул Райту славу. Он находился на спаде карьеры в 1920–1930-х годах, но после этого дома в 1938 году оказался на обложке журнала Time. Позже он спроектировал здание компании Johnson Wax и музей Гуггенхайма в Нью-Йорке (открыт в 1959 году). В 1963 году сын Кауфмана передал дом природоохранной организации Western Pennsylvania Conservancy, и сегодня он открыт для посетителей. В 2019 году Фоллингуотер вошёл в список Всемирного наследия ЮНЕСКО в составе восьми построек Райта.`
+  ],
+  quiz: [
+    { q: 'Что необычного в расположении Дома над водопадом?',
+      ok: 'Он построен прямо над водопадом',
+      bad: ['Он полностью подземный', 'Он стоит на вершине скалы вдали от воды', 'Он плавает на понтонах'],
+      e: 'Райт расположил дом над ручьём, так что водопад оказался под ним.' },
+    { q: 'Какая проблема обнаружилась в доме со временем?',
+      ok: 'Бетонные консоли прогнулись, и их пришлось укреплять',
+      bad: ['Стены из песчаника рассыпались', 'Дом сильно просел в землю', 'Крыша обрушилась в 1950-х'],
+      e: 'Главная консоль прогнулась примерно на 18 см; её укрепили стальными тросами.' },
+    { q: 'Что такое «органическая архитектура» по Райту?',
+      ok: 'Здание, связанное с местом и устроенное как единый организм',
+      bad: ['Здание, форма которого копирует растение', 'Здание целиком из дерева и соломы', 'Здание, не имеющее фундамента'],
+      e: 'Для Райта главное — единство целого и частей и связь здания с участком.' }
+  ]
+});
+TOPICS.arch.push({
+  id: 'arch-7', n: 7,
+  title: 'Баухаус: школа, изменившая предметный мир и среду',
+  body: [
+`Баухаус — немецкая школа искусства, дизайна и архитектуры, которая существовала всего 14 лет, с 1919 по 1933 год, но повлияла на облик современных вещей и зданий сильнее, чем многие учебные заведения с вековой историей. Само название Bauhaus буквально переводится как «дом строительства»: слово Bau означает «строительство», Haus — «дом».`,
+`## Как всё началось`,
+`Школу основал архитектор Вальтер Гропиус в 1919 году в городе Веймар. Он объединил два учебных заведения: Академию изящных искусств и Школу прикладных искусств. Идея состояла в том, чтобы преодолеть разрыв между «высоким» искусством художников и ремеслом мастеров. В программном манифесте Гропиус призывал художников вернуться к ремёслам и называл целью всякого творчества строительство. На обложке манифеста была гравюра Лионеля Фейнингера с изображением собора.`,
+`Обучение строилось по необычной схеме. Каждый студент сначала проходил подготовительный курс, на котором учился работать с формой, цветом и материалами: бумагой, деревом, металлом, стеклом. Затем он выбирал мастерскую: столярную, металлическую, ткацкую, типографскую, настенной живописи и другие. В каждой мастерской преподавали двое: художник, отвечавший за форму, и мастер ремесла, отвечавший за технологию.`,
+`Среди преподавателей были выдающиеся художники — Василий Кандинский, Пауль Клее, Ласло Мохой-Надь, Йозеф Альберс, Оскар Шлеммер и другие. Хотя школа называлась «Баухаус», отделение архитектуры появилось в ней лишь в 1927 году, спустя восемь лет после основания.`,
+`## От ремесла к промышленности`,
+`Сначала Баухаус был близок к романтике ремесленного братства. Но уже в 1923 году на выставке в Веймаре Гропиус выдвинул новый лозунг: «Искусство и техника — новое единство». Теперь целью стало проектировать вещи, которые можно выпускать машинами и сделать доступными многим. Эта идея определила облик дизайна XX века.`,
+`Самые известные вещи Баухауса: стул из гнутых стальных трубок Марселя Брейера (1925–1926, позже его назвали «стулом Василий» в честь Кандинского), настольная лампа Вильгельма Вагенфельда и Карла Юкера, чайник Марианны Бранд, шрифты Герберта Байера без засечек. Любопытно, что многие эти предметы в то время были дорогими и выпускались мелкими партиями — массовыми они стали уже после закрытия школы.`,
+`## Женщины в Баухаусе`,
+`Школа официально принимала женщин наравне с мужчинами, и в первый год среди студентов их было даже больше. Но на практике Гропиус считал, что женщинам не следует заниматься архитектурой и тяжёлыми ремёслами, и направлял их в ткацкую мастерскую. Именно там они добились выдающихся результатов: Гунта Штёльцль, Анни Альберс и другие создавали ткани, которые вошли в историю дизайна.`,
+`## Три города и три директора`,
+`В 1925 году Баухаус вынужден был покинуть Веймар из-за давления местных консервативных властей и переехал в Дессау. Для школы Гропиус построил здание с мастерскими, учебными помещениями и общежитием (1925–1926); фасад с остеклением во всю высоту часто называют образцом современной архитектуры. Директорами были Гропиус (1919–1928), швейцарец Ханнес Майер (1928–1930) и Людвиг Мис ван дер Роэ (1930–1933).`,
+`В 1932 году городской совет Дессау, где уже преобладали национал-социалисты, закрыл школу. Мис ван дер Роэ перевёл её в Берлин и арендовал для неё помещение бывшей телефонной фабрики. В 1933 году, после обыска и давления нового режима, школа прекратила существование: школу обвиняли в левых симпатиях, и руководство приняло решение о самороспуске.`,
+`## Наследие`,
+`Закрытие школы не прекратило её влияния — наоборот, оно распространило его по миру. Гропиус стал преподавать в Гарварде, Мис ван дер Роэ в Иллинойсском технологическом институте в Чикаго, Мохой-Надь основал «Новый Баухаус» в Чикаго в 1937 году, Йозеф Альберс преподавал в колледже Блэк-Маунтин. Подготовительный курс Баухауса стал основой художественного образования во многих странах. Стальная мебель, простые геометричные формы, шрифты без засечек и принцип «форма следует за функцией» стали узнаваемыми элементами современного мира. В 2019 году, к столетию основания, Баухаус отмечали десятки стран.`
+  ],
+  quiz: [
+    { q: 'Кто основал Баухаус и когда?',
+      ok: 'Вальтер Гропиус, 1919 год, Веймар',
+      bad: ['Ле Корбюзье, 1925 год, Париж', 'Мис ван дер Роэ, 1930 год, Берлин', 'Василий Кандинский, 1910 год, Мюнхен'],
+      e: 'Гропиус основал школу в Веймаре в 1919 году.' },
+    { q: 'Как закончилась история Баухауса?',
+      ok: 'Школа прекратила существование в 1933 году под давлением нацистского режима',
+      bad: ['Её закрыли из-за банкротства в 1929 году', 'Она превратилась в университет в 1950 году', 'Её закрыл сам Гропиус в 1925 году'],
+      e: 'После закрытия в Дессау и переезда в Берлин школа была распущена в 1933 году.' },
+    { q: 'Что верно о ранних годах Баухауса?',
+      ok: 'Отделение архитектуры появилось только в 1927 году',
+      bad: ['Архитектура была главным предметом с первого дня', 'Женщин не принимали на обучение', 'Школа с самого начала выпускала мебель массовыми тиражами'],
+      e: 'Хотя название школы связано со строительством, архитектурное отделение открылось на восьмой год.' }
+  ]
+});
+
+TOPICS.arch.push({
+  id: 'arch-8', n: 8,
+  title: 'Брутализм: эстетика честного бетона',
+  body: [
+`Слово «брутализм» часто принимают за описание грубости и жестокости, но оно происходит от французского béton brut — «сырой бетон». Так Ле Корбюзье называл бетон, оставленный в таком виде, в каком он вышел из опалубки: без штукатурки, краски и облицовки. Его жилой дом «Жилая единица» в Марселе (1947–1952) считается одним из прародителей стиля.`,
+`## Откуда взялось название`,
+`Термин «новый брутализм» ввели в 1950-е годы британские архитекторы Элисон и Питер Смитсон. Критик Реймер Бэнем в 1955 году опубликовал статью «Новый брутализм», сделав стиль известным. Первым значимым примером стала школа в Хансантоне в Норфолке (1949–1954) Смитсонов: стальной каркас, кирпич и бетон, а все трубы и провода на виду. Любопытно, что слово «нейбрутализм» ещё в 1950 году применил шведский архитектор Ханс Асплунд — но уже по отношению к кирпичному дому.`,
+`## Идея «честности»`,
+`Для брутализма главная ценность — честность. Материалы и конструкции не маскируются. Бетон показывает фактуру досок опалубки, лестницы и инженерные системы находятся на виду, а форма здания раскрывает его внутреннее устройство. Другие признаки стиля: массивные геометрические объёмы, повторяющиеся элементы, глубокие оконные проёмы и ощущение монументальности.`,
+`Брутализм был ответом и на тесные условия послевоенной эпохи. Европейские города лежали в руинах, требовалось быстро построить много жилья, школ, университетов и больниц. Бетон был дешёвым, прочным и подходил для массового строительства. К тому же многие архитекторы того времени верили, что социальные здания должны выглядеть прямо и без декоративных излишеств.`,
+`## Знаменитые примеры`,
+`Среди самых известных зданий этого стиля: Хабитат 67 в Монреале, построенный Моше Сафди для выставки Экспо-67 из 354 сборных бетонных модулей; Национальный театр в Лондоне Дениса Ласдана (1976); жилой комплекс Барбикан в Лондоне; Бостонская ратуша (1968); башня Трелик-тауэр в Лондоне архитектора Эрно Голдфингера; библиотека Гайзеля Калифорнийского университета в Сан-Диего. Выразительные образцы появились и в Восточной Европе: монумент Бузлуджа в Болгарии (1981), близкий брутализму по духу и мемориальные комплексы Югославии, известные как «споменики».`,
+`## Закат и неприязнь`,
+`К 1970-м годам брутализм начал терять популярность. Причин несколько. Бетон со временем темнеет от дождя, трескается и пачкается. Многие здания плохо обслуживались, а их суровый вид ассоциировался с бедностью и преступностью в бедных районах. Кроме того, массовое жильё в бетонных блоках часто строили без учёта нужд жителей, и общество начало видеть в нём символ планирования сверху вниз. Критики говорили, что брутализм «давит» человека.`,
+`Многие здания были снесены: в 2016 году разрушили центральную библиотеку Бирмингема, а в 2017-м начали снос жилого комплекса Робин-Гуд-Гарденс, созданного самими Смитсонами. Часть его фасада сохранил музей Виктории и Альберта и показал на Венецианской архитектурной биеннале 2018 года.`,
+`## Новая жизнь`,
+`В 2010-х годах интерес к брутализму вернулся. Фотографии бетонных зданий стали популярны в социальных сетях, появились книги и кампании в защиту памятников, например #SOSBrutalism, а исторический статус получили многие объекты. Сторонники стиля ценят его выразительность, смелость форм и социальную идею: общественные здания должны быть доступными и честными. Ещё один аргумент — экологический. Новое строительство из бетона выбрасывает много углекислого газа, поэтому иногда выгоднее сохранить и перестроить старое здание, чем сносить.`,
+`Так что слово «брутальный» в названии стиля вводит в заблуждение. Это архитектура не жёсткости, а откровенности: она ничего не скрывает, в том числе свои недостатки.`
+  ],
+  quiz: [
+    { q: 'От какого французского выражения произошло слово «брутализм»?',
+      ok: 'béton brut — «сырой бетон»',
+      bad: ['brut force — «грубая сила»', 'béton armé — «армированный бетон»', 'bruit — «шум»'],
+      e: 'Так Ле Корбюзье называл необработанный бетон, оставленный как есть после снятия опалубки.' },
+    { q: 'Какая черта характерна для брутализма?',
+      ok: 'Открытый бетон с видимой фактурой опалубки и массивные объёмы',
+      bad: ['Гладкие стеклянные фасады', 'Богатый декор из лепнины', 'Лёгкие деревянные каркасы'],
+      e: 'Идея стиля — честность: материалы и конструкции не маскируются.' },
+    { q: 'Какое здание относится к брутализму?',
+      ok: 'Хабитат 67 в Монреале',
+      bad: ['Крайслер-билдинг в Нью-Йорке', 'Эйфелева башня', 'Собор Саграда Фамилия'],
+      e: 'Хабитат 67 Моше Сафди построен из сборных бетонных модулей.' }
+  ]
+});
+TOPICS.arch.push({
+  id: 'arch-9', n: 9,
+  title: 'Эффект Бильбао: как один музей преобразил городскую экономику',
+  body: [
+`«Эффектом Бильбао» называют ситуацию, когда одно эффектное здание, особенно музей или культурный центр, привлекает туристов и инвестиции и помогает городу возродиться. Название происходит от города Бильбао на севере Испании и музея Гуггенхайма, который открылся там 18 октября 1997 года. Здание спроектировал канадско-американский архитектор Фрэнк Гери.`,
+`## Город до музея`,
+`Бильбао — крупнейший город Страны Басков, исторически промышленный. Он стоит на реке Нервьон, по берегам которой веками работали верфи, сталелитейные заводы и порт. В 1970–1980-е годы тяжёлая промышленность в Европе пришла в упадок, предприятия закрывались, безработица росла, а берега реки превратились в заброшенные и загрязнённые территории. К тому же регион переживал политическую напряжённость, связанную с террористической организацией ЭТА. Город нуждался в новом образе и в новых источниках дохода.`,
+`## План возрождения`,
+`Музей был частью масштабной программы. Власти Страны Басков решили вложить деньги в культуру и городскую инфраструктуру. Они предложили Фонду Соломона Гуггенхайма, владеющему музеями современного искусства, открыть филиал в Бильбао. Баскские власти оплатили строительство и приобретение коллекции, а фонд предоставил свою известность, опыт и часть собрания. Сумма строительства составила примерно 100 миллионов долларов.`,
+`Одновременно город обновлялся и в других местах. Норман Фостер спроектировал метро (открыто в 1995 году), Сантьяго Калатрава — аэропорт и пешеходный мост Субисури, набережные превратили в парки, а на месте заброшенных заводов вырос новый деловой район Абандойбарра. Музей стал визитной карточкой, но не единственным элементом плана.`,
+`## Здание Гери`,
+`Музей напоминает скульптуру из изогнутых объёмов, облицованных известняком, стеклом и титановыми панелями. Титан был выбран из-за долговечности и особого серебристого оттенка, который меняется в зависимости от погоды и освещения. Известно, что на облицовку пошло около 33 тысяч тонких титановых листов, каждый толщиной примерно 0,4 мм. Чтобы спроектировать такие формы, команда Гери использовала программу CATIA, разработанную для авиационной промышленности. Это был один из первых случаев, когда подобные инструменты применили в архитектуре.`,
+`На площади перед музеем стоит двенадцатиметровая скульптура Джеффа Кунса «Щенок», покрытая живыми цветами, а на набережной — «Мама» Луиз Буржуа, гигантский паук из стали и бронзы.`,
+`## Результаты`,
+`Успех превзошёл ожидания. Планировалось, что музей привлечёт 400–500 тысяч посетителей в год, но уже в первый год его посетило больше миллиона человек. По оценкам баскских властей, музей окупил вложения за несколько лет за счёт налогов и расходов туристов. Появились новые отели, рестораны и рабочие места в сфере услуг. Бильбао из промышленного города превратился в место паломничества любителей архитектуры.`,
+`## Критика и ограничения`,
+`Многие города захотели повторить успех. Однако результат повторить удавалось редко. Эксперты называют несколько причин. Во-первых, Бильбао была частью комплексной стратегии, которую поддерживали власти, а не случайным проектом. Во-вторых, музей был не просто зданием, а брендом с мировой известностью. В-третьих, к успеху привели и удачное время, и новизна: в 1997 году такой смелой архитектуры почти не было, а сегодня её много. Проекты филиалов Гуггенхайма в Хельсинки (отклонённый городским советом в 2012 и 2016 годах) и в других местах так и не были реализованы.`,
+`Есть и социальная критика. Некоторые исследователи считают, что выгоды от туризма распределились неравномерно, цены на жильё выросли, а расходы на культуру велись за счёт других нужд города. Но бесспорно одно: Бильбао показал, что архитектура способна менять репутацию города, и после 1997 года мэры по всему миру стали задумываться об «эффекте Бильбао».`
+  ],
+  quiz: [
+    { q: 'Кто спроектировал музей Гуггенхайма в Бильбао?',
+      ok: 'Фрэнк Гери',
+      bad: ['Заха Хадид', 'Норман Фостер', 'Ле Корбюзье'],
+      e: 'Здание создал Фрэнк Гери, музей открыт в 1997 году.' },
+    { q: 'Какой была ситуация в Бильбао до открытия музея?',
+      ok: 'Упадок тяжёлой промышленности и безработица',
+      bad: ['Бум туризма и недостаток жилья', 'Столица Испании с развитой финансовой сферой', 'Город практически не был населён'],
+      e: 'Верфи и сталелитейные заводы закрывались, река превратилась в заброшенную промзону.' },
+    { q: 'Что означает «эффект Бильбао»?',
+      ok: 'Знаковое здание может запустить возрождение города, но успех трудно повторить',
+      bad: ['Любой музей гарантированно окупается за год', 'Титановая облицовка приносит удачу', 'Скульптуры у входа привлекают больше посетителей, чем здание'],
+      e: 'Бильбао был частью комплексной стратегии, и многие города, пытавшиеся копировать успех, не получили такого результата.' }
+  ]
+});
+
+TOPICS.arch.push({
+  id: 'arch-10', n: 10,
+  title: 'Паноптикум Иеремии Бентама: пространственный надзор',
+  body: [
+`Представьте здание, в котором можно наблюдать за всеми одновременно, но никто не знает, смотрят ли на него в данный момент. Именно эту идею в конце XVIII века придумал английский философ и реформатор Иеремия Бентам (1748–1832). Он назвал своё изобретение «паноптикумом», от греческих слов pan («всё») и optikos («зрительный»).`,
+`## Как это придумано`,
+`Основная мысль пришла к Бентаму в 1786–1787 годах, когда он гостил у младшего брата Сэмюэла в городе Кричев на территории нынешней Беларуси. Сэмюэл работал на службе у князя Григория Потёмкина и организовывал мастерские, где трудилось много неквалифицированных рабочих. Ему нужно было следить за ними с минимальным числом надзирателей. Иеремия развил эту идею в серию писем, а затем в книгу «Паноптикум, или Дом надзора» (1791).`,
+`## Устройство`,
+`Здание имеет форму кольца. По окружности расположены камеры, каждая из которых пронизывает всю толщину здания: окно снаружи пропускает свет, а решётчатая стенка внутрь — обзор. В центре стоит высокая башня надзора. Из неё надзиратель может видеть каждую камеру, но благодаря шторкам и особому освещению заключённые не могут разглядеть, находится ли в башне кто-то в данный момент.`,
+`Принцип в том, что надзор должен быть «видимым, но непроверяемым». Заключённый видит башню, но не знает, наблюдают ли за ним. Поэтому ему приходится вести себя так, будто за ним следят постоянно. Бентам считал, что это экономит ресурсы: достаточно одного надзирателя, а порой лишь ощущения его присутствия. Надзор превращался в механизм, который работает без насилия.`,
+`## Не только тюрьма`,
+`Бентам предлагал использовать схему не только для тюрем. Он писал о фабриках, работных домах, больницах, школах и приютах. Он был основателем утилитаризма — философии, по которой хорошим считается то, что приносит наибольшее счастье наибольшему числу людей, — и верил, что правильно устроенная среда может исправлять людей лучше, чем наказание.`,
+`## Что получилось на практике`,
+`Бентам годами добивался строительства паноптикума в Англии. В 1794 году парламент выделил деньги, но проект затянулся, а затем был отвергнут. В 1813 году Бентам получил денежную компенсацию. Сам он пережил это как крупное разочарование. Тюрьма Миллбэнк в Лондоне (1816–1821), построенная позже, использовала идею частично: её план составляли шестиугольные блоки, а не круг.`,
+`Тем не менее в XX веке некоторые тюрьмы действительно получили круглые планы с центральным постом. Один из известных примеров — Президио-Модело на Кубе (построена в 1926–1931 годах), где в 1950-х отбывал срок Фидель Кастро. Есть «купольные» тюрьмы в Нидерландах, например в Бреде (1886). Однако в большинстве случаев такое устройство оказалось неудобным: камеры были тесными, а обслуживание сложным.`,
+`## Метафора Мишеля Фуко`,
+`Вторую жизнь паноптикум получил в 1975 году, когда французский философ Мишель Фуко в книге «Надзирать и наказывать» превратил его в символ современного общества. По Фуко, власть не обязательно должна применять силу. Достаточно создать условия, при которых люди сами контролируют своё поведение, потому что знают, что за ними могут наблюдать. Эту логику он увидел в школах, больницах, армии, на заводах — везде, где используется система дисциплины.`,
+`## Сегодня`,
+`Слово «паноптикум» часто применяют к камерам видеонаблюдения, системам распознавания лиц, а иногда и к социальным сетям, где люди знают, что их активность видна другим. Спорить можно о том, насколько это точное сравнение. Но бентамовская идея остаётся важным примером того, как архитектура может быть инструментом власти.`,
+`Напоследок любопытный факт. По завещанию Бентама его тело было сохранено особым образом: скелет одет в его одежду и посажен в шкаф со стеклянной дверцей, а голова заменена восковой. Этот «автоикон» до сих пор выставлен в Университетском колледже Лондона, с которым Бентама связывают как с вдохновителем его основания.`
+  ],
+  quiz: [
+    { q: 'Кто придумал паноптикум?',
+      ok: 'Иеремия Бентам',
+      bad: ['Мишель Фуко', 'Томас Мор', 'Эбенезер Говард'],
+      e: 'Бентам описал проект в конце XVIII века; Фуко лишь использовал его как метафору.' },
+    { q: 'В чём главный принцип паноптикума?',
+      ok: 'Надзиратель видит всех, а заключённые не знают, смотрят ли на них',
+      bad: ['Заключённые видят друг друга и контролируют друг друга сами', 'Надзиратели ходят по камерам круглосуточно', 'Все камеры расположены в глубоком подвале'],
+      e: 'Неопределённость заставляет людей вести себя так, будто за ними наблюдают постоянно.' },
+    { q: 'Какой философ сделал паноптикум символом современного общества дисциплины?',
+      ok: 'Мишель Фуко',
+      bad: ['Иммануил Кант', 'Карл Маркс', 'Жан-Поль Сартр'],
+      e: 'Фуко разобрал паноптикум в книге «Надзирать и наказывать» (1975).' }
+  ]
+});
+window.VISUALS = {"arch-1": [{"after": 3, "label": "Схема «Дом-Ино»", "html": "<svg class=\"vis\" viewBox=\"0 0 320 190\" role=\"img\" aria-label=\"Схема Дом-Ино: три плиты на колоннах\"><line x1=\"20\" y1=\"172\" x2=\"300\" y2=\"172\" stroke=\"#232227\" stroke-width=\"3\"/><rect x=\"82\" y=\"40\" width=\"10\" height=\"132\" fill=\"#232227\"/><rect x=\"155\" y=\"40\" width=\"10\" height=\"132\" fill=\"#232227\"/><rect x=\"228\" y=\"40\" width=\"10\" height=\"132\" fill=\"#232227\"/><rect x=\"46\" y=\"40\" width=\"228\" height=\"11\" rx=\"2\" fill=\"#7A4A44\"/><rect x=\"46\" y=\"92\" width=\"228\" height=\"11\" rx=\"2\" fill=\"#7A4A44\"/><rect x=\"46\" y=\"144\" width=\"228\" height=\"11\" rx=\"2\" fill=\"#7A4A44\"/><polyline points=\"240,144 240,131 250,131 250,118 260,118 260,105 270,105\" fill=\"none\" stroke=\"#1F7F94\" stroke-width=\"4\" stroke-linejoin=\"round\"/></svg><ul class=\"legend\"><li><i style=\"background:#7A4A44\"></i>Три бетонные плиты</li><li><i style=\"background:#232227\"></i>Тонкие колонны</li><li><i style=\"background:#1F7F94\"></i>Лестница</li></ul>", "cap": "Весь «скелет» дома: плиты, колонны и лестница. Остальное можно расставлять свободно."}, {"after": 8, "label": "Пять пунктов на одном доме", "html": "<svg class=\"vis\" viewBox=\"0 0 320 185\" role=\"img\" aria-label=\"Схема дома с пятью пунктами Ле Корбюзье\"><line x1=\"20\" y1=\"165\" x2=\"300\" y2=\"165\" stroke=\"#232227\" stroke-width=\"3\"/><rect x=\"62\" y=\"105\" width=\"9\" height=\"60\" fill=\"#232227\"/><rect x=\"122\" y=\"105\" width=\"9\" height=\"60\" fill=\"#232227\"/><rect x=\"182\" y=\"105\" width=\"9\" height=\"60\" fill=\"#232227\"/><rect x=\"242\" y=\"105\" width=\"9\" height=\"60\" fill=\"#232227\"/><rect x=\"44\" y=\"52\" width=\"232\" height=\"53\" rx=\"3\" fill=\"#fff\" stroke=\"#232227\" stroke-width=\"3\"/><rect x=\"56\" y=\"64\" width=\"208\" height=\"14\" fill=\"#1F7F94\"/><line x1=\"110\" y1=\"82\" x2=\"110\" y2=\"103\" stroke=\"#232227\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><line x1=\"170\" y1=\"82\" x2=\"170\" y2=\"103\" stroke=\"#232227\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><line x1=\"225\" y1=\"82\" x2=\"225\" y2=\"103\" stroke=\"#232227\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><rect x=\"44\" y=\"46\" width=\"232\" height=\"7\" fill=\"#7A4A44\"/><circle cx=\"75\" cy=\"40\" r=\"8\" fill=\"#B7CB7A\" stroke=\"#232227\" stroke-width=\"1.5\"/><circle cx=\"103\" cy=\"40\" r=\"6\" fill=\"#B7CB7A\" stroke=\"#232227\" stroke-width=\"1.5\"/><circle cx=\"215\" cy=\"40\" r=\"8\" fill=\"#B7CB7A\" stroke=\"#232227\" stroke-width=\"1.5\"/><circle cx=\"250\" cy=\"40\" r=\"6\" fill=\"#B7CB7A\" stroke=\"#232227\" stroke-width=\"1.5\"/><line x1=\"287\" y1=\"135\" x2=\"251\" y2=\"135\" stroke=\"#232227\" stroke-width=\"1.5\"/><line x1=\"287\" y1=\"38\" x2=\"262\" y2=\"40\" stroke=\"#232227\" stroke-width=\"1.5\"/><line x1=\"33\" y1=\"92\" x2=\"108\" y2=\"92\" stroke=\"#232227\" stroke-width=\"1.5\"/><line x1=\"287\" y1=\"71\" x2=\"262\" y2=\"71\" stroke=\"#232227\" stroke-width=\"1.5\"/><line x1=\"33\" y1=\"58\" x2=\"44\" y2=\"58\" stroke=\"#232227\" stroke-width=\"1.5\"/><circle cx=\"298\" cy=\"135\" r=\"11\" fill=\"#FFC341\" stroke=\"#232227\" stroke-width=\"2\"/><text x=\"298\" y=\"139.5\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#232227\">1</text><circle cx=\"298\" cy=\"36\" r=\"11\" fill=\"#FFC341\" stroke=\"#232227\" stroke-width=\"2\"/><text x=\"298\" y=\"40.5\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#232227\">2</text><circle cx=\"22\" cy=\"92\" r=\"11\" fill=\"#FFC341\" stroke=\"#232227\" stroke-width=\"2\"/><text x=\"22\" y=\"96.5\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#232227\">3</text><circle cx=\"298\" cy=\"71\" r=\"11\" fill=\"#FFC341\" stroke=\"#232227\" stroke-width=\"2\"/><text x=\"298\" y=\"75.5\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#232227\">4</text><circle cx=\"22\" cy=\"58\" r=\"11\" fill=\"#FFC341\" stroke=\"#232227\" stroke-width=\"2\"/><text x=\"22\" y=\"62.5\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#232227\">5</text></svg><ol class=\"legend two\"><li><b>1</b>Пилотис</li><li><b>2</b>Крыша-сад</li><li><b>3</b>Свободный план</li><li><b>4</b>Ленточное окно</li><li><b>5</b>Свободный фасад</li></ol>", "cap": ""}], "arch-2": [{"after": 2, "label": "Золотой прямоугольник", "html": "<svg class=\"vis\" viewBox=\"0 0 320 200\" role=\"img\" aria-label=\"Золотой прямоугольник и спираль\"><rect x=\"14\" y=\"10\" width=\"180\" height=\"180\" fill=\"#FFC341\" stroke=\"#232227\" stroke-width=\"2\"/><rect x=\"194\" y=\"10\" width=\"111\" height=\"111\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"2\"/><rect x=\"236\" y=\"121\" width=\"69\" height=\"69\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"2\"/><rect x=\"194\" y=\"148\" width=\"42\" height=\"42\" fill=\"#B7CB7A\" stroke=\"#232227\" stroke-width=\"2\"/><rect x=\"194\" y=\"121\" width=\"27\" height=\"27\" fill=\"#9ED0DB\" stroke=\"#232227\" stroke-width=\"2\"/><rect x=\"221\" y=\"121\" width=\"15\" height=\"27\" fill=\"#fff\" stroke=\"#232227\" stroke-width=\"2\"/><path d=\"M14 190 A 180 180 0 0 1 194 10 A 111 111 0 0 1 305 121 A 69 69 0 0 1 236 190 A 42 42 0 0 1 194 148 A 27 27 0 0 1 221 121\" fill=\"none\" stroke=\"#D4472A\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"104\" y=\"108\" text-anchor=\"middle\" font-size=\"30\" font-weight=\"800\" fill=\"#232227\">1 : 1,618</text><text x=\"104\" y=\"130\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#232227\">золотой прямоугольник</text><text x=\"249\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#232227\">квадрат</text></svg>", "cap": "Отрежьте квадрат, и останется такой же золотой прямоугольник. Так можно повторять бесконечно."}, {"after": 6, "label": "Фигура Модулора", "html": "<svg class=\"vis\" viewBox=\"0 0 320 230\" role=\"img\" aria-label=\"Человек Модулора с отметками 113, 183 и 226 см\"><line x1=\"20\" y1=\"215\" x2=\"300\" y2=\"215\" stroke=\"#232227\" stroke-width=\"3\"/><circle cx=\"110\" cy=\"63\" r=\"10\" fill=\"#FFC341\" stroke=\"#232227\" stroke-width=\"2.5\"/><g stroke=\"#232227\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M110 74 V128\"/><path d=\"M110 128 L98 215\"/><path d=\"M110 128 L122 215\"/><path d=\"M110 86 L92 126\"/><path d=\"M110 86 L121 16\"/></g><line x1=\"130\" y1=\"115\" x2=\"176\" y2=\"115\" stroke=\"#D4472A\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><circle cx=\"176\" cy=\"115\" r=\"4\" fill=\"#D4472A\"/><text x=\"186\" y=\"119.5\" font-size=\"13\" font-weight=\"800\" fill=\"#232227\">113 см, пупок</text><line x1=\"130\" y1=\"53\" x2=\"176\" y2=\"53\" stroke=\"#D4472A\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><circle cx=\"176\" cy=\"53\" r=\"4\" fill=\"#D4472A\"/><text x=\"186\" y=\"57.5\" font-size=\"13\" font-weight=\"800\" fill=\"#232227\">183 см, рост</text><line x1=\"130\" y1=\"16\" x2=\"176\" y2=\"16\" stroke=\"#1F7F94\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><circle cx=\"176\" cy=\"16\" r=\"4\" fill=\"#1F7F94\"/><text x=\"186\" y=\"20.5\" font-size=\"13\" font-weight=\"800\" fill=\"#232227\">226 см, рука вверх</text><line x1=\"176\" y1=\"16\" x2=\"176\" y2=\"215\" stroke=\"#232227\" stroke-width=\"1.5\" opacity=\".5\"/></svg>", "cap": ""}, {"after": 7, "label": "Красный и синий ряды", "html": "<table class=\"vtable\"><tr><th style=\"background:#D4472A;color:#fff\">Красный ряд, см</th></tr><tr><td>27 &nbsp; 43 &nbsp; 70 &nbsp; 113 &nbsp; 183 &nbsp; 296</td></tr><tr><th style=\"background:#1F7F94;color:#fff\">Синий ряд, см</th></tr><tr><td>33 &nbsp; 53 &nbsp; 86 &nbsp; 140 &nbsp; 226 &nbsp; 366</td></tr></table>", "cap": "В каждом ряду число равно сумме двух предыдущих. Синий ряд начинается с удвоенных 113 см."}], "arch-3": [{"after": 1, "label": "Триада Витрувия", "html": "<svg class=\"vis\" viewBox=\"0 0 320 240\" role=\"img\" aria-label=\"Треугольник: прочность, польза, красота\"><polygon points=\"160,50 56,188 264,188\" fill=\"none\" stroke=\"#232227\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"160\" cy=\"52\" r=\"40\" fill=\"#FFC341\" stroke=\"#232227\" stroke-width=\"3\"/><text x=\"160\" y=\"51\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#232227\">Красота</text><text x=\"160\" y=\"67\" text-anchor=\"middle\" font-size=\"11\" font-style=\"italic\" font-weight=\"600\" fill=\"#232227\">venustas</text><circle cx=\"56\" cy=\"188\" r=\"40\" fill=\"#7A4A44\" stroke=\"#232227\" stroke-width=\"3\"/><text x=\"56\" y=\"187\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#fff\">Прочность</text><text x=\"56\" y=\"203\" text-anchor=\"middle\" font-size=\"11\" font-style=\"italic\" font-weight=\"600\" fill=\"#fff\">firmitas</text><circle cx=\"264\" cy=\"188\" r=\"40\" fill=\"#1F7F94\" stroke=\"#232227\" stroke-width=\"3\"/><text x=\"264\" y=\"187\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"#fff\">Польза</text><text x=\"264\" y=\"203\" text-anchor=\"middle\" font-size=\"11\" font-style=\"italic\" font-weight=\"600\" fill=\"#fff\">utilitas</text><text x=\"160\" y=\"150\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#232227\">Хорошее</text><text x=\"160\" y=\"168\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#232227\">здание</text></svg>", "cap": "Все три качества нужны одновременно. Если не хватает одного, здание проигрывает."}], "arch-4": [{"after": 3, "label": "Три части небоскрёба", "html": "<svg class=\"vis\" viewBox=\"0 0 320 215\" role=\"img\" aria-label=\"Фасад небоскрёба из трёх частей\"><line x1=\"14\" y1=\"205\" x2=\"306\" y2=\"205\" stroke=\"#232227\" stroke-width=\"3\"/><rect x=\"30\" y=\"22\" width=\"110\" height=\"34\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"3\"/><rect x=\"30\" y=\"56\" width=\"110\" height=\"104\" fill=\"#fff\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"42\" y1=\"56\" x2=\"42\" y2=\"160\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"54\" y1=\"56\" x2=\"54\" y2=\"160\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"66\" y1=\"56\" x2=\"66\" y2=\"160\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"78\" y1=\"56\" x2=\"78\" y2=\"160\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"90\" y1=\"56\" x2=\"90\" y2=\"160\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"102\" y1=\"56\" x2=\"102\" y2=\"160\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"114\" y1=\"56\" x2=\"114\" y2=\"160\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"126\" y1=\"56\" x2=\"126\" y2=\"160\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"138\" y1=\"56\" x2=\"138\" y2=\"160\" stroke=\"#232227\" stroke-width=\"3\"/><rect x=\"30\" y=\"160\" width=\"110\" height=\"45\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"3\"/><rect x=\"46\" y=\"176\" width=\"14\" height=\"29\" rx=\"7\" fill=\"#232227\"/><rect x=\"78\" y=\"176\" width=\"14\" height=\"29\" rx=\"7\" fill=\"#232227\"/><rect x=\"110\" y=\"176\" width=\"14\" height=\"29\" rx=\"7\" fill=\"#232227\"/><path d=\"M150 25 V53\" stroke=\"#232227\" stroke-width=\"2.5\" fill=\"none\"/><text x=\"162\" y=\"43.0\" font-size=\"14\" font-weight=\"800\" fill=\"#232227\">Венчание</text><path d=\"M150 59 V157\" stroke=\"#232227\" stroke-width=\"2.5\" fill=\"none\"/><text x=\"162\" y=\"112.0\" font-size=\"14\" font-weight=\"800\" fill=\"#232227\">Офисные этажи</text><path d=\"M150 163 V202\" stroke=\"#232227\" stroke-width=\"2.5\" fill=\"none\"/><text x=\"162\" y=\"186.5\" font-size=\"14\" font-weight=\"800\" fill=\"#232227\">Публичный низ</text></svg>", "cap": "Каждая часть фасада выражает свою функцию: вход, работа, завершение."}], "arch-5": [{"after": 2, "label": "Правила композиции", "html": "<svg class=\"vis\" viewBox=\"0 0 320 205\" role=\"img\" aria-label=\"Сравнение классической и деконструктивистской композиции\"><text x=\"80\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#232227\">Классика</text><text x=\"240\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#232227\">Деконструктивизм</text><line x1=\"160\" y1=\"34\" x2=\"160\" y2=\"186\" stroke=\"#232227\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" opacity=\".5\"/><rect x=\"30\" y=\"80\" width=\"100\" height=\"90\" fill=\"#1F7F94\" stroke=\"#232227\" stroke-width=\"3\"/><rect x=\"55\" y=\"54\" width=\"50\" height=\"26\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"42\" y1=\"90\" x2=\"42\" y2=\"170\" stroke=\"#fff\" stroke-width=\"3\"/><line x1=\"70\" y1=\"90\" x2=\"70\" y2=\"170\" stroke=\"#fff\" stroke-width=\"3\"/><line x1=\"98\" y1=\"90\" x2=\"98\" y2=\"170\" stroke=\"#fff\" stroke-width=\"3\"/><line x1=\"114\" y1=\"90\" x2=\"114\" y2=\"170\" stroke=\"#fff\" stroke-width=\"3\"/><g stroke=\"#232227\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"180\" y=\"98\" width=\"100\" height=\"68\" fill=\"#D4472A\" transform=\"rotate(-14 230 132)\"/><polygon points=\"206,60 292,78 262,128 196,104\" fill=\"#FFC341\"/><polygon points=\"244,124 304,112 296,176 238,170\" fill=\"#C5BEF3\" opacity=\".95\"/><polygon points=\"176,150 214,128 226,180 170,184\" fill=\"#1F7F94\"/></g><text x=\"80\" y=\"194\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#232227\">прямые углы</text><text x=\"240\" y=\"194\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#232227\">наклоны и сдвиги</text></svg>", "cap": "Деконструктивизм намеренно нарушает привычный порядок объёмов."}], "arch-6": [{"after": 7, "label": "Схема дома в разрезе", "html": "<svg class=\"vis\" viewBox=\"0 0 320 220\" role=\"img\" aria-label=\"Схема Дома над водопадом\"><polygon points=\"0,126 146,126 146,220 0,220\" fill=\"#7A4A44\"/><rect x=\"146\" y=\"196\" width=\"174\" height=\"24\" fill=\"#1F7F94\" opacity=\".75\"/><path d=\"M146 126 H178 V196 H146 Z\" fill=\"#1F7F94\"/><line x1=\"154\" y1=\"130\" x2=\"154\" y2=\"192\" stroke=\"#fff\" stroke-width=\"2\" opacity=\".7\"/><line x1=\"164\" y1=\"130\" x2=\"164\" y2=\"192\" stroke=\"#fff\" stroke-width=\"2\" opacity=\".7\"/><line x1=\"172\" y1=\"130\" x2=\"172\" y2=\"192\" stroke=\"#fff\" stroke-width=\"2\" opacity=\".7\"/><rect x=\"0\" y=\"118\" width=\"146\" height=\"9\" fill=\"#B7CB7A\"/><rect x=\"90\" y=\"30\" width=\"26\" height=\"92\" fill=\"#8E8A85\" stroke=\"#232227\" stroke-width=\"2.5\"/><line x1=\"90\" y1=\"40\" x2=\"116\" y2=\"40\" stroke=\"#232227\" stroke-width=\"1.5\" opacity=\".6\"/><line x1=\"90\" y1=\"56\" x2=\"116\" y2=\"56\" stroke=\"#232227\" stroke-width=\"1.5\" opacity=\".6\"/><line x1=\"90\" y1=\"72\" x2=\"116\" y2=\"72\" stroke=\"#232227\" stroke-width=\"1.5\" opacity=\".6\"/><line x1=\"90\" y1=\"88\" x2=\"116\" y2=\"88\" stroke=\"#232227\" stroke-width=\"1.5\" opacity=\".6\"/><line x1=\"90\" y1=\"104\" x2=\"116\" y2=\"104\" stroke=\"#232227\" stroke-width=\"1.5\" opacity=\".6\"/><rect x=\"56\" y=\"102\" width=\"184\" height=\"9\" rx=\"2\" fill=\"#fff\" stroke=\"#232227\" stroke-width=\"2.5\"/><rect x=\"70\" y=\"72\" width=\"196\" height=\"9\" rx=\"2\" fill=\"#fff\" stroke=\"#232227\" stroke-width=\"2.5\"/><rect x=\"88\" y=\"44\" width=\"128\" height=\"9\" rx=\"2\" fill=\"#fff\" stroke=\"#232227\" stroke-width=\"2.5\"/><rect x=\"120\" y=\"81\" width=\"110\" height=\"21\" fill=\"#C5BEF3\" opacity=\".7\"/><rect x=\"120\" y=\"53\" width=\"80\" height=\"19\" fill=\"#C5BEF3\" opacity=\".7\"/><path d=\"M262 48 L250 70\" stroke=\"#232227\" stroke-width=\"2\"/><text x=\"236\" y=\"26\" font-size=\"12\" font-weight=\"800\" fill=\"#232227\">консоли</text><text x=\"236\" y=\"40\" font-size=\"12\" font-weight=\"800\" fill=\"#232227\">над водой</text><text x=\"124\" y=\"22\" font-size=\"12\" font-weight=\"800\" fill=\"#232227\">каменный камин</text><path d=\"M118 24 L110 32\" stroke=\"#232227\" stroke-width=\"2\"/><text x=\"190\" y=\"165\" font-size=\"12\" font-weight=\"800\" fill=\"#232227\">водопад</text><text x=\"12\" y=\"150\" font-size=\"12\" font-weight=\"800\" fill=\"#fff\">скала</text></svg>", "cap": "Упрощённая схема: бетонные террасы выступают над водой, а камин держит композицию."}], "arch-7": [{"after": 8, "label": "Хронология Баухауса", "html": "<ul class=\"tl\"><li><b>1919, Веймар</b>Гропиус основывает школу</li><li><b>1925, Дессау</b>Переезд и новое здание школы</li><li><b>1928</b>Директором становится Ханнес Майер</li><li><b>1930</b>Директор Мис ван дер Роэ</li><li><b>1932, Берлин</b>Школа работает в бывшей фабрике</li><li><b>1933</b>Школа прекращает существование</li></ul>", "cap": "Всего 14 лет, три города и три директора."}], "arch-8": [{"after": 2, "label": "Как выглядит «сырой бетон»", "html": "<svg class=\"vis\" viewBox=\"0 0 320 190\" role=\"img\" aria-label=\"Бетонная стена со следами опалубки\"><text x=\"160\" y=\"24\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#232227\">béton brut = «сырой бетон»</text><rect x=\"20\" y=\"40\" width=\"280\" height=\"140\" rx=\"4\" fill=\"#BDBAB4\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"20\" y1=\"54\" x2=\"300\" y2=\"54\" stroke=\"#8F8C87\" stroke-width=\"2\"/><line x1=\"50\" y1=\"40\" x2=\"50\" y2=\"54\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"40\" x2=\"160\" y2=\"54\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"68\" x2=\"300\" y2=\"68\" stroke=\"#8F8C87\" stroke-width=\"2\"/><line x1=\"97\" y1=\"54\" x2=\"97\" y2=\"68\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"207\" y1=\"54\" x2=\"207\" y2=\"68\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"82\" x2=\"300\" y2=\"82\" stroke=\"#8F8C87\" stroke-width=\"2\"/><line x1=\"54\" y1=\"68\" x2=\"54\" y2=\"82\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"164\" y1=\"68\" x2=\"164\" y2=\"82\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"96\" x2=\"300\" y2=\"96\" stroke=\"#8F8C87\" stroke-width=\"2\"/><line x1=\"101\" y1=\"82\" x2=\"101\" y2=\"96\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"211\" y1=\"82\" x2=\"211\" y2=\"96\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"110\" x2=\"300\" y2=\"110\" stroke=\"#8F8C87\" stroke-width=\"2\"/><line x1=\"58\" y1=\"96\" x2=\"58\" y2=\"110\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"168\" y1=\"96\" x2=\"168\" y2=\"110\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"124\" x2=\"300\" y2=\"124\" stroke=\"#8F8C87\" stroke-width=\"2\"/><line x1=\"105\" y1=\"110\" x2=\"105\" y2=\"124\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"215\" y1=\"110\" x2=\"215\" y2=\"124\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"138\" x2=\"300\" y2=\"138\" stroke=\"#8F8C87\" stroke-width=\"2\"/><line x1=\"62\" y1=\"124\" x2=\"62\" y2=\"138\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"172\" y1=\"124\" x2=\"172\" y2=\"138\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"152\" x2=\"300\" y2=\"152\" stroke=\"#8F8C87\" stroke-width=\"2\"/><line x1=\"109\" y1=\"138\" x2=\"109\" y2=\"152\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"219\" y1=\"138\" x2=\"219\" y2=\"152\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"166\" x2=\"300\" y2=\"166\" stroke=\"#8F8C87\" stroke-width=\"2\"/><line x1=\"66\" y1=\"152\" x2=\"66\" y2=\"166\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><line x1=\"176\" y1=\"152\" x2=\"176\" y2=\"166\" stroke=\"#8F8C87\" stroke-width=\"1.5\"/><rect x=\"206\" y=\"72\" width=\"62\" height=\"78\" fill=\"#232227\"/><rect x=\"214\" y=\"80\" width=\"46\" height=\"70\" fill=\"#4A484E\"/><rect x=\"38\" y=\"104\" width=\"136\" height=\"34\" rx=\"17\" fill=\"#fff\" stroke=\"#232227\" stroke-width=\"2\"/><text x=\"106\" y=\"118\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#232227\">следы досок</text><text x=\"106\" y=\"132\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"800\" fill=\"#232227\">опалубки</text></svg>", "cap": "Фактура досок остаётся на стене: это и есть «честность материала»."}], "arch-9": [{"after": 6, "label": "Посетители музея", "html": "<svg class=\"vis\" viewBox=\"0 0 320 222\" role=\"img\" aria-label=\"Столбики: ожидаемое и фактическое число посетителей\"><line x1=\"30\" y1=\"180\" x2=\"300\" y2=\"180\" stroke=\"#232227\" stroke-width=\"3\"/><rect x=\"70\" y=\"100\" width=\"70\" height=\"80\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"3\"/><line x1=\"70\" y1=\"116\" x2=\"140\" y2=\"116\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><rect x=\"190\" y=\"20\" width=\"70\" height=\"160\" fill=\"#D4472A\" stroke=\"#232227\" stroke-width=\"3\"/><text x=\"105\" y=\"90\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#232227\">400–500 тыс.</text><text x=\"225\" y=\"12\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"800\" fill=\"#232227\">больше 1 млн</text><text x=\"105\" y=\"198\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#232227\">ожидали</text><text x=\"105\" y=\"213\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#232227\">за год</text><text x=\"225\" y=\"198\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#232227\">пришли в</text><text x=\"225\" y=\"213\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#232227\">первый год</text></svg>", "cap": "Масштаб столбиков приблизительный."}], "arch-10": [{"after": 2, "label": "План паноптикума", "html": "<svg class=\"vis\" viewBox=\"0 0 320 240\" role=\"img\" aria-label=\"Круглый план паноптикума с центральной башней\"><path d=\"M263.9 124.2 A104 104 0 0 1 257.6 155.9 L216.3 140.7 A60 60 0 0 0 220.0 122.4 Z\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M254.4 163.6 A104 104 0 0 1 236.4 190.5 L204.1 160.7 A60 60 0 0 0 214.5 145.2 Z\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M230.5 196.4 A104 104 0 0 1 203.6 214.4 L185.2 174.5 A60 60 0 0 0 200.7 164.1 Z\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M195.9 217.6 A104 104 0 0 1 164.2 223.9 L162.4 180.0 A60 60 0 0 0 180.7 176.3 Z\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M155.8 223.9 A104 104 0 0 1 124.1 217.6 L139.3 176.3 A60 60 0 0 0 157.6 180.0 Z\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M116.4 214.4 A104 104 0 0 1 89.5 196.4 L119.3 164.1 A60 60 0 0 0 134.8 174.5 Z\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M83.6 190.5 A104 104 0 0 1 65.6 163.6 L105.5 145.2 A60 60 0 0 0 115.9 160.7 Z\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M62.4 155.9 A104 104 0 0 1 56.1 124.2 L100.0 122.4 A60 60 0 0 0 103.7 140.7 Z\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M56.1 115.8 A104 104 0 0 1 62.4 84.1 L103.7 99.3 A60 60 0 0 0 100.0 117.6 Z\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M65.6 76.4 A104 104 0 0 1 83.6 49.5 L115.9 79.3 A60 60 0 0 0 105.5 94.8 Z\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M89.5 43.6 A104 104 0 0 1 116.4 25.6 L134.8 65.5 A60 60 0 0 0 119.3 75.9 Z\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M124.1 22.4 A104 104 0 0 1 155.8 16.1 L157.6 60.0 A60 60 0 0 0 139.3 63.7 Z\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M164.2 16.1 A104 104 0 0 1 195.9 22.4 L180.7 63.7 A60 60 0 0 0 162.4 60.0 Z\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M203.6 25.6 A104 104 0 0 1 230.5 43.6 L200.7 75.9 A60 60 0 0 0 185.2 65.5 Z\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M236.4 49.5 A104 104 0 0 1 254.4 76.4 L214.5 94.8 A60 60 0 0 0 204.1 79.3 Z\" fill=\"#F6CFC6\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M257.6 84.1 A104 104 0 0 1 263.9 115.8 L220.0 117.6 A60 60 0 0 0 216.3 99.3 Z\" fill=\"#C5BEF3\" stroke=\"#232227\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"160\" y1=\"120\" x2=\"218.8\" y2=\"131.7\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"209.9\" y2=\"153.3\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"193.3\" y2=\"169.9\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"171.7\" y2=\"178.8\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"148.3\" y2=\"178.8\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"126.7\" y2=\"169.9\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"110.1\" y2=\"153.3\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"101.2\" y2=\"131.7\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"101.2\" y2=\"108.3\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"110.1\" y2=\"86.7\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"126.7\" y2=\"70.1\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"148.3\" y2=\"61.2\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"171.7\" y2=\"61.2\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"193.3\" y2=\"70.1\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"209.9\" y2=\"86.7\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><line x1=\"160\" y1=\"120\" x2=\"218.8\" y2=\"108.3\" stroke=\"#D4472A\" stroke-width=\"1.6\" opacity=\".7\"/><circle cx=\"160\" cy=\"120\" r=\"24\" fill=\"#232227\"/><text x=\"160\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"800\" fill=\"#fff\">башня</text></svg><ul class=\"legend\"><li><i style=\"background:#232227\"></i>Башня надзора в центре</li><li><i style=\"background:#F6CFC6\"></i>Камеры по кругу</li><li><i style=\"background:#D4472A\"></i>Линии обзора</li></ul>", "cap": ""}]};
+window.LINKS = {"arch-1": [{"after": 9, "text": "Фото: вилла Савой", "q": "Villa Savoye Poissy"}], "arch-2": [{"after": 8, "text": "Фото: Жилая единица", "q": "Unité d'Habitation Marseille"}], "arch-3": [{"after": 3, "text": "Фото: Пантеон", "q": "Pantheon Rome dome interior"}, {"after": 6, "text": "Рисунок Леонардо", "q": "Vitruvian Man Leonardo"}], "arch-4": [{"after": 4, "text": "Фото: Уэйнрайт-билдинг", "q": "Wainwright Building St. Louis"}], "arch-5": [{"after": 6, "text": "Фото: Центр Алиева", "q": "Heydar Aliyev Center Baku"}], "arch-6": [{"after": 7, "text": "Фото: Дом над водопадом", "q": "Fallingwater Frank Lloyd Wright"}], "arch-7": [{"after": 5, "text": "Фото: стул Брейера", "q": "Wassily Chair Marcel Breuer"}, {"after": 7, "text": "Фото: Баухаус в Дессау", "q": "Bauhaus Dessau building"}], "arch-8": [{"after": 4, "text": "Фото: Хабитат 67", "q": "Habitat 67 Montreal"}, {"after": 4, "text": "Фото: Барбикан", "q": "Barbican Estate London"}], "arch-9": [{"after": 4, "text": "Фото: музей в Бильбао", "q": "Guggenheim Museum Bilbao"}], "arch-10": [{"after": 6, "text": "Фото: Президио-Модело", "q": "Presidio Modelo Cuba prison"}]};
+window.LINKS = {"arch-1": [{"after": 9, "text": "Вилла Савой", "q": "Villa Savoye"}], "arch-2": [{"after": 8, "text": "Жилая единица в Марселе", "q": "Unité d'Habitation Marseille"}, {"after": 8, "text": "Чандигарх", "q": "Chandigarh Capitol Complex"}], "arch-3": [{"after": 3, "text": "Пантеон", "q": "Pantheon Rome dome interior"}, {"after": 6, "text": "Витрувианский человек", "q": "Vitruvian Man Leonardo"}, {"after": 9, "text": "Дом Фарнсворт", "q": "Farnsworth House"}], "arch-4": [{"after": 4, "text": "Уэйнрайт-билдинг", "q": "Wainwright Building St. Louis"}, {"after": 4, "text": "Карсон Пири Скотт", "q": "Carson Pirie Scott Building"}], "arch-5": [{"after": 4, "text": "Пожарная станция Vitra", "q": "Vitra Fire Station"}, {"after": 5, "text": "MAXXI в Риме", "q": "MAXXI Rome"}, {"after": 5, "text": "Водный центр в Лондоне", "q": "London Aquatics Centre"}, {"after": 6, "text": "Центр Гейдара Алиева", "q": "Heydar Aliyev Center"}], "arch-6": [{"after": 7, "text": "Дом над водопадом", "q": "Fallingwater"}, {"after": 9, "text": "Музей Гуггенхайма в Нью-Йорке", "q": "Solomon R. Guggenheim Museum New York"}], "arch-7": [{"after": 5, "text": "Кресло «Василий»", "q": "Wassily Chair"}, {"after": 5, "text": "Лампа Вагенфельда", "q": "Wagenfeld lamp"}, {"after": 7, "text": "Здание Баухауса в Дессау", "q": "Bauhaus Dessau building"}], "arch-8": [{"after": 0, "text": "Жилая единица в Марселе", "q": "Unité d'Habitation Marseille"}, {"after": 4, "text": "Хабитат 67", "q": "Habitat 67 Montreal"}, {"after": 4, "text": "Барбикан", "q": "Barbican Estate"}, {"after": 4, "text": "Трелик-тауэр", "q": "Trellick Tower"}, {"after": 4, "text": "Бузлуджа", "q": "Buzludzha monument"}], "arch-9": [{"after": 0, "text": "Музей в Бильбао", "q": "Guggenheim Museum Bilbao"}, {"after": 5, "text": "«Щенок» Кунса", "q": "Puppy Jeff Koons Bilbao"}, {"after": 5, "text": "«Мама» Буржуа", "q": "Maman Louise Bourgeois spider"}], "arch-10": [{"after": 6, "text": "Президио-Модело", "q": "Presidio Modelo Cuba"}, {"after": 6, "text": "Тюрьма в Бреде", "q": "Koepelgevangenis Breda"}, {"after": 9, "text": "Автоикон Бентама", "q": "Jeremy Bentham auto-icon"}]};
+
+/* ======================= Приложение ======================= */
+(function () {
+  'use strict';
+
+  var KEY = 'vmesto-lenty:v1';
+
+  var DISC = [
+    { id: 'arch',    name: 'Архитектура',        c: '#FFC341', on: '#232227', soft: '#FFF0C7', note: 'Здания, города и идеи, которые их построили' },
+    { id: 'fashion', name: 'Мода',               c: '#D4472A', on: '#FFFFFF', soft: '#F8D9D1', note: 'Одежда, бренды и история стиля' },
+    { id: 'social',  name: 'Социальные науки',   c: '#C5BEF3', on: '#232227', soft: '#E7E3FA', note: 'Законы общества и человеческого поведения' },
+    { id: 'science', name: 'Естественные науки', c: '#1F7F94', on: '#FFFFFF', soft: '#CFE6EB', note: 'Физика, биология, химия и космос' },
+    { id: 'psych',   name: 'Психология',         c: '#7A4A44', on: '#FFFFFF', soft: '#E7D6D3', note: 'Как работают мышление и поведение' }
+  ];
+  var DISC_BY = {};
+  DISC.forEach(function (d) { DISC_BY[d.id] = d; });
+
+  var STEP_COLORS = [
+    ['#FFC341', '#232227'], ['#7A4A44', '#FFFFFF'], ['#F6CFC6', '#232227'], ['#1F7F94', '#FFFFFF'],
+    ['#C9C2F5', '#232227'], ['#D4472A', '#FFFFFF'], ['#B7CB7A', '#232227'], ['#3A3B40', '#FFFFFF']
+  ];
+
+  var ALL = [];
+  var BY_ID = {};
+  DISC.forEach(function (d) {
+    (TOPICS[d.id] || []).forEach(function (t) {
+      t.disc = d.id;
+      var words = t.body.join(' ').split(/\s+/).length;
+      t.min = Math.max(1, Math.ceil(words / 180));
+      var steps = [], head = '', pi = -1;
+      var vis = (window.VISUALS && window.VISUALS[t.id]) || [];
+      t.body.forEach(function (b) {
+        if (b.indexOf('## ') === 0) { head = b.slice(3); return; }
+        pi++;
+        var lk = ((window.LINKS && window.LINKS[t.id]) || []).filter(function (l) { return l.after === pi; });
+        steps.push({ h: head, text: b, links: lk });
+        vis.forEach(function (v) {
+          if (v.after === pi) steps.push({ vis: true, h: v.label || 'Схема', html: v.html, cap: v.cap || '' });
+        });
+      });
+      t.steps = steps;
+      ALL.push(t);
+      BY_ID[t.id] = t;
+    });
+  });
+
+  var ICON = {
+    close: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+    back: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+    ext: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>',
+    pen: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19z"/></svg>',
+    check: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+  };
+
+  /* ---------- Хранилище ---------- */
+  var S = { progress: {}, notes: [], quotes: [], days: {} };
+  var storeKind = 'memory';
+
+  function localOk() {
+    try { localStorage.setItem('__t', '1'); localStorage.removeItem('__t'); return true; } catch (e) { return false; }
+  }
+  async function loadState() {
+    try {
+      if (window.storage && typeof window.storage.get === 'function') {
+        storeKind = 'artifact';
+        try {
+          var r = await window.storage.get(KEY, false);
+          if (r && r.value) return JSON.parse(r.value);
+        } catch (e) { /* ключа ещё нет */ }
+        return null;
+      }
+    } catch (e) { /* дальше */ }
+    if (localOk()) {
+      storeKind = 'local';
+      try { var v = localStorage.getItem(KEY); return v ? JSON.parse(v) : null; } catch (e) { return null; }
+    }
+    return null;
+  }
+  function saveState() {
+    var json = JSON.stringify(S);
+    try {
+      if (storeKind === 'artifact') {
+        window.storage.set(KEY, json, false).catch(function () { toast('Не удалось сохранить данные'); });
+      } else if (storeKind === 'local') {
+        localStorage.setItem(KEY, json);
+      }
+    } catch (e) { toast('Не удалось сохранить данные'); }
+  }
+
+  /* ---------- Утилиты ---------- */
+  var app = document.getElementById('app');
+  var dock = document.getElementById('dock');
+  var quotebar = document.getElementById('quotebar');
+  var toastEl = document.getElementById('toast');
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+  function fmtDate(ts) {
+    try { return new Date(ts).toLocaleDateString('ru-RU', { day: 'numeric', month: 'long' }); } catch (e) { return ''; }
+  }
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function dateKey(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function markToday() {
+    var k = dateKey(new Date());
+    if (!S.days[k]) { S.days[k] = 1; saveState(); }
+  }
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+  var toastTimer;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2200);
+  }
+  function prog(id) { return S.progress[id] || {}; }
+  function isPassed(id) { return !!prog(id).passed; }
+  function discStats(id) {
+    var list = TOPICS[id] || [];
+    var passed = list.filter(function (t) { return isPassed(t.id); }).length;
+    return { total: list.length, passed: passed, pct: list.length ? Math.round(passed / list.length * 100) : 0 };
+  }
+  function plural(n, one, few, many) {
+    var m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return one;
+    if (m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20)) return few;
+    return many;
+  }
+  function discStyle(d) { return '--c:' + d.c + ';--on:' + d.on + ';--soft:' + d.soft; }
+
+  /* ---------- Маршрутизация ---------- */
+  var current = null;
+  var currentTopic = null;
+  var stepTopic = null, stepIdx = 0;
+  var quiz = null;
+  var notesTab = 'notes';
+
+  function readHash() { return (location.hash || '#/').slice(1) || '/'; }
+  function navigate(p) {
+    try { if (location.hash !== '#' + p) location.hash = p; } catch (e) { /* нет доступа к hash */ }
+    route(p);
+  }
+  function route(p) { if (p !== current) render(p); }
+
+  function render(path, keepScroll) {
+    current = path;
+    currentTopic = null;
+    hideQuoteBar();
+    var parts = path.split('/').filter(Boolean);
+    var html, showDock = false;
+
+    if (parts.length === 0) {
+      html = viewHome(); showDock = true;
+    } else if (parts[0] === 'd' && DISC_BY[parts[1]]) {
+      html = viewDisc(parts[1]);
+    } else if (parts[0] === 't' && BY_ID[parts[1]]) {
+      currentTopic = parts[1];
+      html = viewTopic(parts[1]);
+    } else if (parts[0] === 'q' && BY_ID[parts[1]]) {
+      if (!quiz || quiz.id !== parts[1]) startQuiz(parts[1]);
+      html = viewQuiz();
+    } else if (parts[0] === 'notes') {
+      html = viewNotes();
+    } else {
+      current = '/';
+      html = viewHome(); showDock = true;
+    }
+
+    app.innerHTML = html;
+    dock.hidden = !showDock;
+    if (!keepScroll) window.scrollTo(0, 0);
+    document.documentElement.classList.toggle('noscroll', !!document.querySelector('.card.fit'));
+    if (currentTopic) { refreshTopicItems(); fitCard(); }
+  }
+
+  /* Подгонка шрифта: карточка должна целиком помещаться на экране */
+  function fitCard() {
+    var card = document.querySelector('.card.fit');
+    var btn = document.querySelector('.footer-in');
+    if (!card || !btn) return;
+    var size = 17;
+    card.style.fontSize = size + 'px';
+    var limit = btn.getBoundingClientRect().top - 12;
+    while (size > 11.5 && card.getBoundingClientRect().bottom > limit) {
+      size -= 0.5;
+      card.style.fontSize = size + 'px';
+    }
+    /* если даже на минимальном шрифте не помещается, разрешаем прокрутку */
+    if (card.getBoundingClientRect().bottom > limit) document.documentElement.classList.remove('noscroll');
+  }
+  window.addEventListener('resize', function () { if (currentTopic) fitCard(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (currentTopic) fitCard(); });
+
+  /* ---------- Главный экран ---------- */
+  var DOW = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+
+  function viewHome() {
+    var total = ALL.length;
+    var passed = ALL.filter(function (t) { return isPassed(t.id); }).length;
+
+    var now = new Date();
+    var mon = new Date(now);
+    mon.setDate(now.getDate() - ((now.getDay() + 6) % 7));
+    var todayKey = dateKey(now), active = 0, week = '';
+    for (var i = 0; i < 7; i++) {
+      var d = new Date(mon); d.setDate(mon.getDate() + i);
+      var k = dateKey(d), on = !!S.days[k];
+      if (on) active++;
+      week += '<div class="day' + (on ? ' on' : '') + (k === todayKey ? ' today' : '') + '">' + DOW[i] + '<b>' + d.getDate() + '</b></div>';
+    }
+
+    var h = '<header><h1 class="brand">Thesis</h1></header>';
+    h += '<div class="week" aria-label="Дни недели">' + week + '</div>';
+    if (storeKind === 'memory') {
+      h += '<p class="warn">Здесь нельзя сохранять данные между запусками: прогресс и заметки пропадут при закрытии страницы.</p>';
+    }
+    h += '<div class="sec-head"><h2>Дисциплины</h2><span>Пройдено тем: ' + passed + ' из ' + total + '</span></div>';
+    h += '<ul class="dlist">';
+    DISC.forEach(function (d) {
+      var st = discStats(d.id);
+      var meta = st.total ? st.passed + ' из ' + st.total + ' ' + plural(st.total, 'темы', 'тем', 'тем') : 'Темы скоро появятся';
+      h += '<li><button class="dcard" style="' + discStyle(d) + '" data-go="/d/' + d.id + '">' +
+        '<span class="dname">' + esc(d.name) + '</span>' +
+        '<span class="dpct">' + st.pct + '%</span>' +
+        '<span class="dmeta">' + meta + '</span>' +
+        '<span class="pill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + st.pct +
+        '" aria-label="Прогресс: ' + esc(d.name) + '"><i style="width:' + st.pct + '%"></i></span></button></li>';
+    });
+    h += '</ul>';
+    return h;
+  }
+
+  /* ---------- Дисциплина ---------- */
+  function viewDisc(id) {
+    var d = DISC_BY[id];
+    var st = discStats(id);
+    var list = TOPICS[id] || [];
+    var h = '<div style="' + discStyle(d) + '">';
+    h += '<header class="dhead"><button class="icon-btn" data-go="/" aria-label="Назад">' + ICON.back + '</button>';
+    h += '<h1>' + esc(d.name) + '</h1>';
+    h += '<span class="dmeta">' + (st.total ? st.passed + ' из ' + st.total + ' пройдено, ' + st.pct + '%' : esc(d.note)) + '</span>';
+    h += '<span class="pill"><i style="width:' + st.pct + '%"></i></span></header>';
+    if (!list.length) {
+      h += '<p class="empty">Темы этой дисциплины ещё не добавлены. Их можно подключить следующей порцией.</p>';
+    } else {
+      h += '<ul class="grid">';
+      list.forEach(function (t) {
+        var p = prog(t.id);
+        var cls = p.passed ? 'passed' : (p.read ? 'read' : '');
+        var status = p.passed ? 'Пройдена' : (p.read ? 'Тест не сдан' : '');
+        h += '<li><button class="tile ' + cls + '" data-go="/t/' + t.id + '">' +
+          (p.passed ? '<span class="ok">' + ICON.check + '</span>' : '') +
+          '<span class="tn">' + t.n + '</span>' +
+          '<span class="tt">' + esc(t.title) + '</span>' +
+          '<span class="ts">' + status + '</span></button></li>';
+      });
+      h += '</ul>';
+    }
+    return h + '</div>';
+  }
+
+  /* ---------- Тема по шагам ---------- */
+  function viewTopic(id) {
+    var t = BY_ID[id], d = DISC_BY[t.disc], p = prog(id);
+    var n = t.steps.length;
+    if (stepTopic !== id) {
+      stepTopic = id;
+      stepIdx = Math.max(0, Math.min(p.step || 0, n));
+    }
+    var last = stepIdx >= n;
+    var pct = last ? 100 : Math.round(stepIdx / n * 100);
+
+    var h = '<div style="' + discStyle(d) + '">';
+    h += '<div class="topbar"><button class="icon-btn" data-go="/d/' + d.id + '" aria-label="Закрыть тему">' + ICON.close + '</button>' +
+      '<div class="pbar" role="progressbar" aria-valuemin="0" aria-valuemax="' + n + '" aria-valuenow="' + Math.min(stepIdx, n) + '" aria-label="Прогресс по теме"><i style="width:' + pct + '%"></i></div>' +
+      '<span class="pcount">' + (last ? 'Итог' : (stepIdx + 1) + ' / ' + n) + '</span></div>';
+
+    if (!last) {
+      var s = t.steps[stepIdx];
+      var col = STEP_COLORS[stepIdx % STEP_COLORS.length];
+      h += '<p class="ttl-sm">' + esc(t.title) + '</p>';
+      if (stepIdx === 0) {
+        h += '<p class="ttl-sm meta">Время чтения: около ' + t.min + ' ' + plural(t.min, 'минуты', 'минут', 'минут') + '</p>';
+      }
+      if (s.vis) {
+        h += '<div class="card fit slide" id="step-vis" style="--cb:var(--soft);--cf:#232227"><span class="chip">' + esc(s.h) + '</span>' +
+          '<div class="vbox">' + s.html + '</div>' + (s.cap ? '<p class="cap">' + esc(s.cap) + '</p>' : '') + '</div>';
+      } else {
+        h += '<div class="card fit slide" id="step-text" style="--cb:' + col[0] + ';--cf:' + col[1] + '">';
+        if (s.h) h += '<span class="chip">' + esc(s.h) + '</span>';
+        h += '<p>' + esc(s.text) + '</p>';
+        if (s.links && s.links.length) {
+          h += '<div class="links">' + s.links.map(function (l) {
+            return '<a class="ext" target="_blank" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=' +
+              encodeURIComponent(l.q) + '">' + esc(l.text) + ICON.ext + '</a>';
+          }).join('') + '</div>';
+        }
+        h += '</div>';
+      }
+      h += '<div id="note-box" class="sheet" hidden><textarea id="note-input" placeholder="Что хочется запомнить или обдумать?" aria-label="Новая заметка"></textarea>' +
+        '<button class="secondary" data-act="add-note">Сохранить заметку</button></div>';
+    } else {
+      h += '<div class="card slide" style="--cb:#FFC341;--cf:#232227"><h2>Тема прочитана</h2>' +
+        '<p>Вы прошли все ' + n + ' ' + plural(n, 'шаг', 'шага', 'шагов') + '. Добавьте заметку, если хочется что-то сохранить, а затем ответьте на три вопроса.</p></div>';
+      h += '<h3 class="sub">Заметки и цитаты</h3>';
+      h += '<textarea id="note-input" placeholder="Что хочется запомнить или обдумать?" aria-label="Новая заметка"></textarea>' +
+        '<button class="secondary" data-act="add-note">Сохранить заметку</button>';
+      h += '<div class="items" id="topic-items"></div>';
+    }
+
+    h += '<div class="footer"><div class="footer-in">';
+    if (stepIdx > 0) h += '<button class="round" data-act="prev" aria-label="Предыдущий шаг">' + ICON.back + '</button>';
+    if (!last) h += '<button class="round" data-act="toggle-note" aria-label="Записать мысль">' + ICON.pen + '</button>';
+    if (last) h += '<button class="primary" data-act="finish">' + (p.passed ? 'Пройти тест ещё раз' : 'Тема изучена') + '</button>';
+    else h += '<button class="primary" data-act="next-step">' + (stepIdx === n - 1 ? 'Закончить чтение' : 'Дальше') + '</button>';
+    h += '</div></div></div>';
+    return h;
+  }
+
+  function setStep(i) {
+    var t = BY_ID[currentTopic];
+    stepIdx = Math.max(0, Math.min(i, t.steps.length));
+    var p = S.progress[currentTopic] || (S.progress[currentTopic] = {});
+    p.step = stepIdx >= t.steps.length ? 0 : stepIdx;
+    markToday();
+    saveState();
+    render(current);
+  }
+
+  /* ---------- Заметки и цитаты ---------- */
+  function itemHtml(kind, it, withTopic) {
+    var t = BY_ID[it.topicId];
+    var pend = pendingDel === kind + it.id;
+    var h = '<div class="item ' + (kind === 'quote' ? 'q' : 'n') + '"><p>' + esc(it.text) + '</p>';
+    h += '<div class="row"><span>';
+    if (withTopic && t) h += '<button class="topic-link" data-go="/t/' + t.id + '">' + esc(t.title) + '</button>, ';
+    h += fmtDate(it.ts) + '</span>';
+    h += '<button class="lnk' + (pend ? ' danger' : '') + '" data-act="del" data-kind="' + kind + '" data-id="' + it.id + '">' +
+      (pend ? 'Точно удалить?' : 'Удалить') + '</button></div></div>';
+    return h;
+  }
+
+  function refreshTopicItems() {
+    var box = document.getElementById('topic-items');
+    if (!box || !currentTopic) return;
+    var items = [];
+    S.quotes.forEach(function (q) { if (q.topicId === currentTopic) items.push({ kind: 'quote', it: q }); });
+    S.notes.forEach(function (n) { if (n.topicId === currentTopic) items.push({ kind: 'note', it: n }); });
+    items.sort(function (a, b) { return b.it.ts - a.it.ts; });
+    box.innerHTML = items.length
+      ? items.map(function (x) { return itemHtml(x.kind, x.it, false); }).join('')
+      : '<p class="empty-sm">Пока пусто. Выделяйте фрагменты в шагах, и они появятся здесь.</p>';
+  }
+
+  function viewNotes() {
+    var list = notesTab === 'notes' ? S.notes : S.quotes;
+    var kind = notesTab === 'notes' ? 'note' : 'quote';
+    var sorted = list.slice().sort(function (a, b) { return b.ts - a.ts; });
+    var h = '<div class="topbar"><button class="icon-btn" data-go="/" aria-label="Назад">' + ICON.back + '</button></div>';
+    h += '<h1 style="font-size:34px">Заметки и цитаты</h1>';
+    h += '<div class="tabs" role="tablist">' +
+      '<button class="tab" role="tab" data-act="tab" data-tab="notes" aria-selected="' + (notesTab === 'notes') + '">Заметки (' + S.notes.length + ')</button>' +
+      '<button class="tab" role="tab" data-act="tab" data-tab="quotes" aria-selected="' + (notesTab === 'quotes') + '">Цитаты (' + S.quotes.length + ')</button></div>';
+    if (!sorted.length) {
+      h += '<p class="empty">' + (notesTab === 'notes'
+        ? 'Заметок пока нет. Откройте тему и нажмите «Записать мысль».'
+        : 'Цитат пока нет. Выделите фрагмент в тексте темы, и появится кнопка «Сохранить цитату».') + '</p>';
+    } else {
+      h += '<div class="items">' + sorted.map(function (it) { return itemHtml(kind, it, true); }).join('') + '</div>';
+    }
+    return h;
+  }
+
+  var pendingDel = null, pendingTimer;
+  function handleDelete(kind, id) {
+    var token = kind + id;
+    if (pendingDel !== token) {
+      pendingDel = token;
+      clearTimeout(pendingTimer);
+      pendingTimer = setTimeout(function () { pendingDel = null; refreshLists(); }, 3000);
+      refreshLists();
+      return;
+    }
+    pendingDel = null;
+    clearTimeout(pendingTimer);
+    if (kind === 'note') S.notes = S.notes.filter(function (n) { return n.id !== id; });
+    else S.quotes = S.quotes.filter(function (q) { return q.id !== id; });
+    saveState();
+    refreshLists();
+    toast('Удалено');
+  }
+  function refreshLists() {
+    if (currentTopic) refreshTopicItems();
+    else if (current === '/notes') render(current, true);
+  }
+
+  function addNote() {
+    var input = document.getElementById('note-input');
+    if (!input || !currentTopic) return;
+    var text = input.value.trim();
+    if (!text) { toast('Сначала напишите заметку'); input.focus(); return; }
+    S.notes.push({ id: uid(), topicId: currentTopic, text: text, ts: Date.now() });
+    saveState();
+    input.value = '';
+    var box = document.getElementById('note-box');
+    if (box) box.hidden = true;
+    refreshTopicItems();
+    toast('Заметка сохранена');
+  }
+
+  /* ---------- Цитаты из текста ---------- */
+  var pendingQuote = '';
+  var hideTimer;
+  function hideQuoteBar() {
+    clearTimeout(hideTimer);
+    quotebar.classList.remove('show');
+    pendingQuote = '';
+  }
+  function scheduleHide() {
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(function () {
+      quotebar.classList.remove('show');
+      pendingQuote = '';
+    }, 700);
+  }
+  document.addEventListener('selectionchange', function () {
+    if (!currentTopic) return;
+    var sel = window.getSelection();
+    var art = document.getElementById('step-text');
+    if (!sel || sel.isCollapsed || !sel.rangeCount || !art) { scheduleHide(); return; }
+    var range = sel.getRangeAt(0);
+    if (!art.contains(range.commonAncestorContainer)) { scheduleHide(); return; }
+    var text = sel.toString().replace(/\s+/g, ' ').trim();
+    if (text.length < 8) { scheduleHide(); return; }
+    pendingQuote = text;
+    clearTimeout(hideTimer);
+    quotebar.classList.add('show');
+  });
+  quotebar.addEventListener('pointerdown', function (e) { clearTimeout(hideTimer); e.preventDefault(); });
+
+  function saveQuote() {
+    if (!pendingQuote || !currentTopic) return;
+    var dup = S.quotes.some(function (q) { return q.topicId === currentTopic && q.text === pendingQuote; });
+    if (!dup) {
+      S.quotes.push({ id: uid(), topicId: currentTopic, text: pendingQuote, ts: Date.now() });
+      saveState();
+      toast('Цитата сохранена');
+    } else {
+      toast('Эта цитата уже сохранена');
+    }
+    var sel = window.getSelection();
+    if (sel && sel.removeAllRanges) sel.removeAllRanges();
+    hideQuoteBar();
+    refreshTopicItems();
+  }
+
+  /* ---------- Тест ---------- */
+  function startQuiz(id) {
+    var t = BY_ID[id];
+    quiz = {
+      id: id, i: 0, right: 0, chosen: null, finished: false,
+      items: t.quiz.map(function (q) {
+        var opts = [{ t: q.ok, ok: true }].concat(q.bad.map(function (b) { return { t: b, ok: false }; }));
+        return { q: q.q, e: q.e, opts: shuffle(opts), correct: null };
+      })
+    };
+  }
+
+  function viewQuiz() {
+    var t = BY_ID[quiz.id], d = DISC_BY[t.disc];
+    var n = quiz.items.length;
+    var h = '<div style="' + discStyle(d) + '">';
+    if (quiz.finished) return h + viewResult(t) + '</div>';
+
+    var it = quiz.items[quiz.i];
+    var pct = Math.round((quiz.i + (quiz.chosen !== null ? 1 : 0)) / n * 100);
+    h += '<div class="topbar"><button class="icon-btn" data-go="/t/' + t.id + '" aria-label="Вернуться к тексту">' + ICON.close + '</button>' +
+      '<div class="pbar"><i style="width:' + pct + '%"></i></div>' +
+      '<span class="pcount">' + (quiz.i + 1) + ' / ' + n + '</span></div>';
+    h += '<div class="qcard"><h2>' + esc(it.q) + '</h2></div>';
+    h += '<div class="opts">';
+    it.opts.forEach(function (o, idx) {
+      var cls = 'opt';
+      if (quiz.chosen !== null) {
+        if (o.ok) cls += ' ok';
+        else if (idx === quiz.chosen) cls += ' no';
+        else cls += ' dim';
+      }
+      h += '<button class="' + cls + '" data-act="opt" data-i="' + idx + '"' + (quiz.chosen !== null ? ' disabled' : '') + '>' + esc(o.t) + '</button>';
+    });
+    h += '</div>';
+    if (quiz.chosen !== null) {
+      var good = it.opts[quiz.chosen].ok;
+      h += '<div class="fb ' + (good ? 'ok' : 'no') + '"><div class="fb-in"><h3>' + (good ? 'Верно' : 'Неверно') + '</h3><p>' + esc(it.e) + '</p>' +
+        '<button class="primary" data-act="next">' + (quiz.i < n - 1 ? 'Дальше' : 'Показать результат') + '</button></div></div>';
+    }
+    return h + '</div>';
+  }
+
+  function viewResult(t) {
+    var n = quiz.items.length;
+    var ok = quiz.right === n;
+    var h = '<div class="result"><div style="font-weight:700;margin-bottom:8px">' + (ok ? 'Тема пройдена' : 'Тема пока не засчитана') + '</div>';
+    h += '<div class="big">' + quiz.right + ' из ' + n + '</div>';
+    if (!ok) h += '<p>Чтобы тема засчиталась, нужно ответить правильно на все три вопроса. Перечитайте текст или попробуйте ещё раз.</p>';
+    h += '</div>';
+    h += '<ul class="review">';
+    quiz.items.forEach(function (it) {
+      var correct = it.opts.filter(function (o) { return o.ok; })[0].t;
+      h += '<li class="' + (it.correct ? 'ok' : 'no') + '">' + esc(it.q) +
+        '<small>' + (it.correct ? 'Верно' : 'Верный ответ: ' + esc(correct)) + '</small></li>';
+    });
+    h += '</ul><div class="stack">';
+    if (ok) {
+      h += '<button class="primary" data-go="/d/' + t.disc + '">К темам дисциплины</button>';
+      h += '<button class="accent" data-act="random">Случайная тема</button>';
+    } else {
+      h += '<button class="primary" data-act="retry">Пересдать тест</button>';
+      h += '<button class="secondary" data-act="reread">Перечитать тему</button>';
+    }
+    return h + '</div>';
+  }
+
+  function finishQuiz() {
+    quiz.finished = true;
+    var p = S.progress[quiz.id] || (S.progress[quiz.id] = {});
+    p.read = true;
+    p.attempts = (p.attempts || 0) + 1;
+    p.best = Math.max(p.best || 0, quiz.right);
+    if (quiz.right === quiz.items.length && !p.passed) {
+      p.passed = true;
+      p.passedAt = Date.now();
+    }
+    markToday();
+    saveState();
+  }
+
+  /* ---------- Случайная тема ---------- */
+  function randomTopic() {
+    if (!ALL.length) { toast('Пока нет тем'); return; }
+    var fresh = ALL.filter(function (t) { return !isPassed(t.id); });
+    var pool = fresh.length ? fresh : ALL;
+    var t = pool[Math.floor(Math.random() * pool.length)];
+    stepTopic = null;
+    navigate('/t/' + t.id);
+  }
+
+  /* ---------- События ---------- */
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-go],[data-act]');
+    if (!el) return;
+    if (el.dataset.go) {
+      if (el.dataset.go.indexOf('/t/') === 0) stepTopic = null;
+      navigate(el.dataset.go);
+      return;
+    }
+    var act = el.dataset.act;
+    if (act === 'random') randomTopic();
+    else if (act === 'add-note') addNote();
+    else if (act === 'save-quote') saveQuote();
+    else if (act === 'del') handleDelete(el.dataset.kind, el.dataset.id);
+    else if (act === 'tab') { notesTab = el.dataset.tab; render(current, true); }
+    else if (act === 'toggle-note') {
+      var box = document.getElementById('note-box');
+      if (box) {
+        box.hidden = !box.hidden;
+        if (!box.hidden) document.getElementById('note-input').focus();
+      }
+    }
+    else if (act === 'next-step') setStep(stepIdx + 1);
+    else if (act === 'prev') setStep(stepIdx - 1);
+    else if (act === 'finish') {
+      var p = S.progress[currentTopic] || (S.progress[currentTopic] = {});
+      p.read = true;
+      p.step = 0;
+      saveState();
+      startQuiz(currentTopic);
+      navigate('/q/' + currentTopic);
+    }
+    else if (act === 'opt') {
+      if (!quiz || quiz.chosen !== null) return;
+      var idx = Number(el.dataset.i);
+      var it = quiz.items[quiz.i];
+      quiz.chosen = idx;
+      it.correct = it.opts[idx].ok;
+      if (it.correct) quiz.right++;
+      render(current, true);
+    }
+    else if (act === 'next') {
+      if (quiz.i < quiz.items.length - 1) { quiz.i++; quiz.chosen = null; }
+      else finishQuiz();
+      render(current);
+    }
+    else if (act === 'retry') { startQuiz(quiz.id); render(current); }
+    else if (act === 'reread') { stepTopic = null; var q = S.progress[quiz.id]; if (q) q.step = 0; navigate('/t/' + quiz.id); }
+  });
+
+  window.addEventListener('hashchange', function () { route(readHash()); });
+
+  /* ---------- Запуск ---------- */
+  loadState().then(function (saved) {
+    if (saved && typeof saved === 'object') {
+      S.progress = saved.progress || {};
+      S.notes = saved.notes || [];
+      S.quotes = saved.quotes || [];
+      S.days = saved.days || {};
+    }
+    render(readHash());
+  }).catch(function () { render(readHash()); });
+})();
+
+/* Офлайн-режим: работает, когда страница открыта по адресу http(s), например на GitHub Pages */
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function () { /* без офлайн-режима приложение всё равно работает */ });
+  });
+}
+</script>
+</body>
+</html>
