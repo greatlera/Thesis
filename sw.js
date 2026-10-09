@@ -1,5 +1,5 @@
 /* Thesis: офлайн-кэш. Чтобы выпустить обновление, достаточно заменить index.html: страница берётся из сети, если она есть. */
-var CACHE = 'thesis-v1';
+var CACHE = 'thesis-v2';
 var CORE = ['./', './index.html', './manifest.webmanifest', './thesis-icon-180.png', './thesis-icon-192.png', './thesis-icon-512.png'];
 var FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
 
@@ -55,4 +55,12 @@ self.addEventListener('fetch', function (e) {
     return;
   }
   e.respondWith(staleWhileRevalidate(req));
+});
+
+self.addEventListener('notificationclick', function (e) {
+  e.notification.close();
+  e.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(function (list) {
+    for (var i = 0; i < list.length; i++) { if ('focus' in list[i]) return list[i].focus(); }
+    if (self.clients.openWindow) return self.clients.openWindow('./');
+  }));
 });
