@@ -98,14 +98,15 @@ svg{display:block}
 .dhead .icon-btn{margin-bottom:14px}
 .dhead h1{font-size:34px}
 .dhead .dmeta{margin:6px 0 0;display:block}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 0;padding:0;list-style:none}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:12px;margin:18px 0 0;padding:0;list-style:none}
+.grid>li{min-width:0}
 .tile{
   position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:12px;
-  width:100%;height:100%;min-height:150px;padding:16px;text-align:left;
+  width:100%;min-width:0;height:100%;min-height:150px;padding:16px;text-align:left;
   background:var(--soft);border:2px solid transparent;border-radius:24px;color:var(--ink);
 }
 .tile .tn{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1}
-.tile .tt{font-size:14px;line-height:1.3;font-weight:600;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.tile .tt{overflow-wrap:anywhere;hyphens:auto;font-size:14px;line-height:1.3;font-weight:600;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .tile .ts{font-size:13px;font-weight:700;min-height:18px}
 .tile.read{border:2px dashed var(--ink)}
 .tile.soon{background:transparent;border:2px dashed var(--line);color:var(--muted);cursor:default}
@@ -233,7 +234,7 @@ html.noscroll,html.noscroll body{overflow:hidden;height:100%}
 .ext{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 14px;border-radius:999px;border:2px solid currentColor;color:inherit;font-weight:700;font-size:.88em;text-decoration:none}
 .ext svg{flex:none}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-@media (min-width:520px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:520px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* Повторение и настройки */
 .hrow{display:flex;justify-content:space-between;align-items:center}
@@ -258,16 +259,68 @@ html.noscroll,html.noscroll body{overflow:hidden;height:100%}
 .lead2{margin:14px 0 0;color:var(--muted);font-size:16px}
 .qcard .casep{margin:0 0 12px;font-size:17px;line-height:1.5;font-weight:600}
 .qcard .chip{margin-bottom:10px}
+
+/* Нижняя панель главного экрана */
+.dockbtn{flex:1;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;min-height:60px;padding:8px 14px;border-radius:999px;border:2px solid var(--ink);font-weight:700;font-size:15.5px;line-height:1.15;color:var(--ink)}
+.dockbtn.white{background:#fff}
+.dockbtn.yellow{background:var(--yellow)}
+.dockbtn:active{transform:scale(.98)}
+.dbadge{position:absolute;top:-9px;right:-3px;display:grid;place-items:center;min-width:28px;height:28px;padding:0 7px;border-radius:999px;background:#D4472A;color:#fff;border:2px solid var(--bg);font-size:14px;font-weight:800}
+.dbadge[hidden]{display:none}
+.hbtns{display:flex;gap:8px}
+.setcard .how{margin:14px 0 0;font-weight:800;font-size:15px}
+.setcard .bul{margin:8px 0 0;padding:0 0 0 20px;font-size:15px;line-height:1.45;font-weight:500}
+.setcard .bul li{margin:0 0 6px}
+@media (max-width:380px){.dockbtn{font-size:14.5px;padding:8px 10px}}
+
+.dock-col{flex-direction:column}
+.dock-row{display:flex;gap:12px}
+#dock .repbtn{margin:0;min-height:54px;background:#fff;box-shadow:0 4px 14px rgba(35,34,39,.12)}
+#dock .round,#dock .accent{min-height:54px}
+#dock .round{width:54px;height:54px}
+#app.withdock{padding-bottom:178px}
+.howl{margin:6px 0 0;padding:0 0 0 20px;font-size:15px;line-height:1.45;font-weight:500}
+.howl li{margin:4px 0}
+.setcard .how{margin-top:12px}
+
+/* Нижняя панель: три кнопки в один ряд */
+.dock-row3{display:flex;gap:10px}
+.dbtn{position:relative;flex:1 1 0;min-width:0;min-height:66px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:8px 6px;border:2px solid var(--ink);border-radius:22px;background:#fff;color:var(--ink);font-weight:700;font-size:12.5px;line-height:1.15;text-align:center;box-shadow:0 4px 14px rgba(35,34,39,.12)}
+.dbtn.main{background:var(--yellow)}
+.dbtn svg{flex:none}
+.dbtn .repn{position:absolute;top:-9px;right:-5px;min-width:26px;height:26px;font-size:14px;background:var(--yellow);border:2px solid var(--ink);border-radius:999px;display:grid;place-items:center;padding:0 6px}
+.dbtn:active{transform:scale(.98)}
+/* ===== Итоговые правила: сетка тем и нижняя панель ===== */
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto;gap:12px;align-items:stretch}
+@media (min-width:520px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.grid>li{display:flex;min-width:0}
+.tile{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr auto;align-content:stretch;gap:8px;width:100%;height:auto;min-height:132px;padding:12px}
+.tile .tn{font-size:28px;line-height:1}
+.tile .tt{display:block;font-size:13px;line-height:1.3;overflow:visible;-webkit-line-clamp:unset;-webkit-box-orient:initial;overflow-wrap:anywhere;hyphens:auto;-webkit-hyphens:auto;min-width:0}
+.tile .ts{min-height:18px;align-self:end}
+#dock .dock-3{display:flex;align-items:stretch;gap:10px;max-width:564px;margin:0 auto}
+#dock .round{flex:none;width:58px;height:58px;box-shadow:0 4px 14px rgba(35,34,39,.12)}
+#dock .repbtn,#dock .accent{flex:1 1 0;min-width:0;min-height:58px;margin:0;padding:8px 10px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;font-size:14.5px;line-height:1.15;font-weight:700;border-radius:999px}
+#dock .repbtn{background:#fff;border:2px solid var(--ink);box-shadow:0 4px 14px rgba(35,34,39,.12)}
+#dock .accent{border:2px solid transparent;box-shadow:0 4px 14px rgba(35,34,39,.18)}
+#dock .repn{position:absolute;top:-10px;right:-3px;min-width:26px;height:26px;padding:0 6px;font-size:13px}
+#app.withdock{padding-bottom:140px}
+@media (max-width:340px){#dock .repbtn,#dock .accent{font-size:13px;padding:6px 6px}#dock .dock-3{gap:8px}}
+
+/* Полоса под системными кнопками Android: цвет подстраивается, чтобы кнопки были видны */
+:root{--navfill:#EFEDEA}
+@media (prefers-color-scheme:dark){:root{--navfill:#232227}}
+html[data-nav="dark"]{--navfill:#232227}
+html[data-nav="light"]{--navfill:#EFEDEA}
+#navfill{position:fixed;left:0;right:0;bottom:0;height:var(--sab,env(safe-area-inset-bottom,0px));background:var(--navfill);z-index:60;pointer-events:none}
 </style>
 </head>
 <body>
 <div id="app" aria-live="polite">Загрузка…</div>
-<div id="dock" hidden><div class="dock-in">
-  <button class="round" data-go="/notes" aria-label="Заметки и цитаты"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M9 11h6M9 15h4"/></svg></button>
-  <button class="accent" data-act="random"><svg style="display:inline-block;vertical-align:-4px;margin-right:8px" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>Случайная тема</button>
-</div></div>
+<div id="dock" hidden></div>
 <div id="quotebar"><button class="quote-btn" data-act="save-quote">Сохранить цитату</button></div>
 <div id="toast" role="status"></div>
+<div id="navfill" aria-hidden="true"></div>
 <script>
 const TOPICS={arch:[],fashion:[],social:[],science:[],psych:[],music:[],cinema:[]};
 TOPICS.arch.push({
@@ -703,7 +756,7 @@ TOPICS.fashion.push({
 `## Брюки на женщинах: что считалось нормой`,
 `До XX века брюки носили главным образом мужчины. Женщины в брюках встречались редко и нередко вызывали осуждение. В 1930 году Марлен Дитрих появилась в мужском фраке в фильме «Марокко», и это воспринималось как смелый жест. Но даже в 1960-х в некоторых ресторанах и общественных местах женщинам в брюках могли отказать во входе.`,
 `## Кто такой Сен-Лоран`,
-`Ив Сен-Лоран (1936–2008) родился в Оране, в Алжире. В 21 год он возглавил дом Dior после смерти Кристиана Диора. Позже он основал собственный дом вместе с партнёром Пьером Берже (1961). Уже в первые годы он делал смелые вещи: брюки, сафари-жакеты, пальто-бушлаты. В 1966 году он запустил линию Rive Gauche, одну из первых линий готовой одежды от кутюрного дома, то есть вещи, которые можно было купить сразу, не шить на заказ.`,
+`Ив Сен-Лоран (1936–2008) родился в Оране, в Алжире. В 21 год он возглавил дом Dior после смерти Кристиана Диора. Позже он основал собственный дом вместе с деловым партнёром Пьером Берже (1961). Уже в первые годы он делал смелые вещи: брюки, сафари-жакеты, пальто-бушлаты. В 1966 году он запустил линию Rive Gauche, одну из первых линий готовой одежды от кутюрного дома, то есть вещи, которые можно было купить сразу, не шить на заказ.`,
 `## Смокинг для женщины`,
 `Le Smoking появился в осенне-зимней коллекции 1966 года. Крой копировал мужской вечерний костюм, но был подогнан под женскую фигуру. Образ строился на контрасте: строгая форма и женственность модели, подчёркнутая макияжем, причёской и украшениями. Сен-Лоран говорил, что смокинг даёт женщине стиль и уверенность, а не подражание мужчине.`,
 `Сначала коллекция вызвала смешанную реакцию. Постоянные клиентки кутюрного дома не спешили покупать такой костюм, хотя среди тех, кто носил его, была актриса Катрин Денёв. Постепенно образ закрепился, и Сен-Лоран возвращался к нему почти в каждой коллекции на протяжении десятилетий.`,
@@ -1036,7 +1089,7 @@ TOPICS.social.push({
 `## Практика в Нью-Йорке`,
 `В 1990-е годы теорию применяли в Нью-Йорке. Мэр Руди Джулиани и начальник полиции Уильям Брэттон усилили борьбу с мелкими нарушениями: проезд без билета, вандализм, граффити. Уровень преступности в городе действительно резко снизился. Сторонники связывали это с политикой «нулевой терпимости».`,
 `## Критика`,
-`Однако причины падения преступности остаются предметом споров. Подобное снижение происходило и в других американских городах, где такие меры не вводили. Исследователи называли и другие факторы: экономический рост, изменения в наркорынке, демографию. Работа Роберта Сэмпсона и Стивена Роденбуша 2004 года показала, что беспорядок и преступность во многом связаны с общими социальными условиями района, например бедностью, а не прямо друг из друга.`,
+`Однако причины падения преступности остаются предметом споров. Подобное снижение происходило и в других американских городах, где такие меры не вводили. Исследователи называли и другие факторы: экономический рост, изменения в криминальной среде, демографию. Работа Роберта Сэмпсона и Стивена Роденбуша 2004 года показала, что беспорядок и преступность во многом связаны с общими социальными условиями района, например бедностью, а не прямо друг из друга.`,
 `Есть и данные в пользу теории. В экспериментах нидерландских учёных (2008) люди чаще мусорили и даже воровали, когда место было покрыто граффити. Метаанализ 2015 года показал, что целенаправленная работа полиции с беспорядком в «горячих точках» снижает преступность, а жёсткая политика «нулевой терпимости» менее эффективна.`,
 `## Социальные последствия`,
 `Политика борьбы с мелкими нарушениями вызывала споры. Критики считали, что она приводила к необоснованным остановкам и обыскам, особенно среди национальных меньшинств. Поэтому сегодня исследователи советуют отличать улучшение городской среды, то есть починку, уборку и освещение, от жёстких мер, направленных на людей.`
@@ -1130,7 +1183,7 @@ TOPICS.social.push({
 `## Кто такой Эйхман`,
 `Адольф Эйхман (1906–1962) был офицером СС и одним из организаторов массовой депортации евреев в лагеря смерти. После войны он скрывался в Аргентине. В мае 1960 года его нашли и вывезли в Израиль агенты разведки «Моссад». Суд в Иерусалиме начался в апреле 1961 года и закончился смертным приговором в декабре. Эйхмана повесили 31 мая 1962 года.`,
 `## Арендт в зале суда`,
-`Ханна Арендт родилась в Германии в еврейской семье и после прихода нацистов к власти эмигрировала, сначала во Францию, затем в США. Она была известным философом, автором книги «Истоки тоталитаризма» (1951). Журнал The New Yorker отправил её на процесс в качестве корреспондента. Результатом стала книга «Эйхман в Иерусалиме. Отчёт о банальности зла» (1963).`,
+`Ханна Арендт родилась в Германии в еврейской семье и после прихода нацистов к власти эмигрировала, сначала во Францию, затем в США. Она была известным философом. Журнал The New Yorker отправил её на процесс в качестве корреспондента. Результатом стала книга «Эйхман в Иерусалиме. Отчёт о банальности зла» (1963).`,
 `## Что она увидела`,
 `Арендт ожидала увидеть зловещее чудовище. Вместо этого перед ней оказался человек, говоривший шаблонными фразами, озабоченный карьерой и исполнением приказов. Он не выглядел фанатиком или садистом. Арендт сделала вывод, что главной чертой Эйхмана была не глубокая ненависть, а неспособность думать самостоятельно, ставить себя на место другого. Эту «бездумность» она считала причиной того, что обычный исполнитель может участвовать в страшных событиях.`,
 `## Что значит «банальность»`,
@@ -1170,7 +1223,7 @@ TOPICS.social.push({
 `## Оговорки`,
 `Более подробный анализ показал, что результат не такой однозначный. Большинство цепочек оборвалось: из 296 начатых цепочек до цели дошли лишь около двадцати процентов. Психолог Джудит Клейнфельд в 2002 году изучила архивы Милгрэма и пришла к выводу, что выводы нельзя считать строго доказанными. Кроме того, участники были не совсем случайными людьми.`,
 `## Проверки в интернете`,
-`В 2003 году Дункан Уоттс и его коллеги провели похожий эксперимент по электронной почте. В нём участвовало более 60 тысяч человек из 166 стран, целями были 18 человек. Завершённые цепочки в среднем оказались короткими, около четырёх шагов, но завершилась лишь малая часть, около 400 из 24 тысяч. В 2011 году Facebook и Миланский университет подсчитали, что среднее расстояние между пользователями сети составляет около 4,7 шага, а к 2016 году около 3,6.`,
+`В 2003 году Дункан Уоттс и его коллеги провели похожий эксперимент по электронной почте. В нём участвовало более 60 тысяч человек из 166 стран, целями были 18 человек. Завершённые цепочки в среднем оказались короткими, около четырёх шагов, но завершилась лишь малая часть, около 400 из 24 тысяч. В 2011 году исследователи одной из крупнейших соцсетей вместе с Миланским университетом подсчитали, что среднее расстояние между её пользователями составляет около 4,7 шага, а к 2016 году около 3,6.`,
 `## Теория малых миров`,
 `Почему цепочки такие короткие? В 1998 году Дункан Уоттс и Стивен Строгац описали «сети малого мира». В них большинство людей связаны с соседями и друзьями, но достаточно нескольких «дальних» связей, чтобы расстояние между любыми двумя узлами резко сократилось. Такие свойства есть не только у социальных сетей, но и у нейронов в мозге и электрических сетей.`,
 `## Игры, которые это показывают`,
@@ -3015,7 +3068,7 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
 'social-3': [
  ['q','Где и в каком году вышла статья «Разбитые окна»?','В журнале The Atlantic, 1982 год',['В журнале Time, 1969 год','В газете New York Times, 1992 год','В журнале Nature, 2001 год'],'Авторы: Джеймс Уилсон и Джордж Келлинг.'],
  ['tf','В опыте Зимбардо машина в Пало-Альто неделю никого не интересовала, пока он сам не ударил её кувалдой.',true,'машину разобрали за один час','В Бронксе машину начали разбирать почти сразу.'],
- ['c','Город ужесточил наказание за мелкие нарушения, и преступность упала. Но она упала и в соседних городах, где такой политики не было.','Что это говорит о теории?','Причины падения преступности остаются предметом споров',['Теория точно доказана','Политика навредила городу'],'Называют и другие факторы: экономику, демографию, рынок наркотиков.'],
+ ['c','Город ужесточил наказание за мелкие нарушения, и преступность упала. Но она упала и в соседних городах, где такой политики не было.','Что это говорит о теории?','Причины падения преступности остаются предметом споров',['Теория точно доказана','Политика навредила городу'],'Называют и другие факторы: экономику, демографию, ситуацию в криминальной среде.'],
  ['c','Мэрия чинит освещение, убирает граффити и ремонтирует здания.','Какая часть идеи вызывает меньше всего споров?','Улучшение городской среды',['Жёсткие остановки и обыски','Запрет собраний'],'Критику вызывали прежде всего жёсткие меры против людей.']],
 'social-4': [
  ['q','Кто опубликовал статью «Трагедия общин» в 1968 году?','Гаррет Хардин',['Элинор Остром','Адам Смит','Роберт Мальтус'],'Статья вышла в журнале Science.'],
@@ -3324,7 +3377,7 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
   };
 
   /* ---------- Хранилище ---------- */
-  var S = { progress: {}, notes: [], quotes: [], days: {}, settings: { spaced: false }, alerts: [] };
+  var S = { progress: {}, notes: [], quotes: [], days: {}, settings: { spaced: false, nav: 'auto' }, alerts: [] };
   var storeKind = 'memory';
 
   function localOk() {
@@ -3468,6 +3521,8 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
 
     app.innerHTML = html;
     dock.hidden = !showDock;
+    if (showDock) dock.innerHTML = dockHtml();
+    app.classList.toggle('withdock', showDock);
     if (!keepScroll) window.scrollTo(0, 0);
     document.documentElement.classList.toggle('noscroll', !!document.querySelector('.card.fit'));
     if (currentTopic) { refreshTopicItems(); fitCard(); }
@@ -3491,6 +3546,17 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
   window.addEventListener('resize', function () { if (currentTopic) fitCard(); });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (currentTopic) fitCard(); });
 
+  /* ---------- Нижняя панель главного экрана ---------- */
+  function dockHtml() {
+    var dueN = S.settings.spaced ? dueTopicCount() : 0;
+    return '<div class="dock-in dock-3">' +
+      '<button class="round" data-go="/notes" aria-label="Заметки и цитаты"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M9 11h6M9 15h4"/></svg></button>' +
+      '<button class="repbtn" data-go="/review"><span>Повторить изученное</span>' +
+      (dueN ? '<b class="repn" aria-label="Тем к повторению: ' + dueN + '">' + dueN + '</b>' : '') + '</button>' +
+      '<button class="accent" data-act="random"><span>Случайная тема</span></button>' +
+      '</div>';
+  }
+
   /* ---------- Главный экран ---------- */
   var DOW = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
 
@@ -3513,9 +3579,6 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
       '<button class="icon-btn" data-go="/settings" aria-label="Настройки">' + ICON.gear + '</button></header>';
     h += '<div class="week" aria-label="Дни недели">' + week + '</div>';
     h += alertsHtml();
-    var dueN = S.settings.spaced ? dueTopicCount() : 0;
-    h += '<button class="repbtn" data-go="/review"><span>Повторить изученное</span>' +
-      (dueN ? '<b class="repn" aria-label="Тем к повторению: ' + dueN + '">' + dueN + '</b>' : '') + '</button>';
     if (storeKind === 'memory') {
       h += '<p class="warn">Здесь нельзя сохранять данные между запусками: прогресс и заметки пропадут при закрытии страницы.</p>';
     }
@@ -3883,6 +3946,9 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
     });
     return best;
   }
+  function applyNav() {
+    document.documentElement.setAttribute('data-nav', (S.settings && S.settings.nav) || 'auto');
+  }
   function setSpaced(on) {
     S.settings.spaced = !!on;
     if (on) {
@@ -4070,15 +4136,19 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
     h += '<h1 style="font-size:34px">Настройки</h1>';
     h += '<div class="setcard"><div class="setrow"><div><b>Интервальное повторение</b></div>' +
       '<button class="switch" role="switch" aria-checked="' + on + '" aria-label="Интервальное повторение" data-act="toggle-spaced"><i></i></button></div>';
-    h += '<p>Метод запоминания: тема повторяется не сразу, а через всё более длинные промежутки времени, пока знание не закрепится надолго. Для каждой пройденной темы подготовлено 4 вопроса, по одному на интервал.</p>';
-    h += '<ul class="intl">' +
-      '<li><b>Через 36 часов</b>первый пик забывания: исчезает около 70 % деталей</li>' +
-      '<li><b>Через 7 дней</b>закрепление концепции в долговременной памяти</li>' +
-      '<li><b>Через 21 день</b>проверка глубинного понимания</li>' +
-      '<li><b>Через 60 дней</b>финальная реактивация ментальной модели</li></ul>';
-    h += '<p>Время отсчитывается с момента, когда вы прошли тест по теме. На кнопке «Повторить изученное» показано число тем, которые пора повторить. Пропущенные вопросы не сгорают, а накапливаются.</p>';
-    h += '<p>Если ответили неверно, тема остаётся пройденной, но вам предложат изучить её снова. Если по теме не отвечены два вопроса, придёт предупреждение, что тема скоро слетит. Если за 3 дня после предупреждения вопросы остались без ответа, тема снова станет непройденной.</p>';
+    h += '<p>Помогает закрепить знания в долгосрочной памяти через 4 вопроса по графику: через 36 часов, 7, 21 и 60 дней после изучения темы.</p>';
+    h += '<p class="how"><b>Как это работает:</b></p>';
+    h += '<ul class="howl"><li>Вопросы не сгорают, а копятся в разделе «Повторить».</li>' +
+      '<li>Ошибка не сбрасывает прогресс, но система предложит повторить материал.</li>' +
+      '<li>Если пропустить 2 вопроса подряд, у вас будет 3 дня на ответ до сброса темы в статус непройденной.</li></ul>';
     h += '<p>Когда переключатель выключен, кнопка просто задаёт случайные вопросы по пройденным темам: без счётчика, предупреждений и потери прогресса.</p></div>';
+    var nv = S.settings.nav || 'auto';
+    h += '<div class="setcard"><b>Полоса под кнопками телефона</b>' +
+      '<p>Если системные кнопки внизу экрана (назад, домой, обзор) плохо видны, выберите цвет полосы под ними. «Авто» подстраивается под тёмную или светлую тему телефона.</p>' +
+      '<div class="tabs" role="radiogroup" aria-label="Цвет полосы под кнопками телефона">' +
+      [['auto', 'Авто'], ['dark', 'Тёмная'], ['light', 'Светлая']].map(function (o) {
+        return '<button class="tab" role="radio" aria-checked="' + (nv === o[0]) + '" aria-selected="' + (nv === o[0]) + '" data-act="set-nav" data-v="' + o[0] + '">' + o[1] + '</button>';
+      }).join('') + '</div></div>';
     h += '<div class="setcard"><b>Уведомления</b>';
     if (perm === 'unsupported') h += '<p>Этот браузер не поддерживает уведомления. Предупреждения будут показываться на главном экране.</p>';
     else if (perm === 'granted') h += '<p>Уведомления разрешены.</p>';
@@ -4136,6 +4206,7 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
       if (rev.i < rev.items.length - 1) rev.i++; else rev.finished = true;
       render(current);
     }
+    else if (act === 'set-nav') { S.settings.nav = el.dataset.v; applyNav(); saveState(); render(current, true); }
     else if (act === 'toggle-spaced') { setSpaced(!S.settings.spaced); render(current, true); }
     else if (act === 'ask-notify') {
       try { Notification.requestPermission().then(function () { render(current, true); }); } catch (e) { toast('Не удалось запросить разрешение'); }
@@ -4186,9 +4257,11 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
       S.quotes = saved.quotes || [];
       S.days = saved.days || {};
       S.settings = saved.settings || { spaced: false };
+      if (!S.settings.nav) S.settings.nav = 'auto';
       S.alerts = saved.alerts || [];
     }
     window.REVIEW_DATA_READY = true;
+    applyNav();
     checkRepetition();
     render(readHash());
     setInterval(function () { if (checkRepetition()) refreshHome(); }, 60000);
