@@ -4142,13 +4142,6 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
       '<li>Ошибка не сбрасывает прогресс, но система предложит повторить материал.</li>' +
       '<li>Если пропустить 2 вопроса подряд, у вас будет 3 дня на ответ до сброса темы в статус непройденной.</li></ul>';
     h += '<p>Когда переключатель выключен, кнопка просто задаёт случайные вопросы по пройденным темам: без счётчика, предупреждений и потери прогресса.</p></div>';
-    var nv = S.settings.nav || 'auto';
-    h += '<div class="setcard"><b>Полоса под кнопками телефона</b>' +
-      '<p>Если системные кнопки внизу экрана (назад, домой, обзор) плохо видны, выберите цвет полосы под ними. «Авто» подстраивается под тёмную или светлую тему телефона.</p>' +
-      '<div class="tabs" role="radiogroup" aria-label="Цвет полосы под кнопками телефона">' +
-      [['auto', 'Авто'], ['dark', 'Тёмная'], ['light', 'Светлая']].map(function (o) {
-        return '<button class="tab" role="radio" aria-checked="' + (nv === o[0]) + '" aria-selected="' + (nv === o[0]) + '" data-act="set-nav" data-v="' + o[0] + '">' + o[1] + '</button>';
-      }).join('') + '</div></div>';
     h += '<div class="setcard"><b>Уведомления</b>';
     if (perm === 'unsupported') h += '<p>Этот браузер не поддерживает уведомления. Предупреждения будут показываться на главном экране.</p>';
     else if (perm === 'granted') h += '<p>Уведомления разрешены.</p>';
@@ -4206,7 +4199,6 @@ window.REVIEW = Object.assign(window.REVIEW || {}, {
       if (rev.i < rev.items.length - 1) rev.i++; else rev.finished = true;
       render(current);
     }
-    else if (act === 'set-nav') { S.settings.nav = el.dataset.v; applyNav(); saveState(); render(current, true); }
     else if (act === 'toggle-spaced') { setSpaced(!S.settings.spaced); render(current, true); }
     else if (act === 'ask-notify') {
       try { Notification.requestPermission().then(function () { render(current, true); }); } catch (e) { toast('Не удалось запросить разрешение'); }

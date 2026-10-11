@@ -1,5 +1,5 @@
 /* Thesis: офлайн-кэш. Чтобы выпустить обновление, достаточно заменить index.html: страница берётся из сети, если она есть. */
-var CACHE = 'thesis-v2';
+var CACHE = 'thesis-v3';
 var CORE = ['./', './index.html', './manifest.webmanifest', './thesis-icon-180.png', './thesis-icon-192.png', './thesis-icon-512.png'];
 var FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
 
