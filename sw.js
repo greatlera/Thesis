@@ -1,6 +1,6 @@
 /* Thesis: офлайн-кэш. Чтобы выпустить обновление, достаточно заменить index.html: страница берётся из сети, если она есть. */
-var CACHE = 'thesis-v3';
-var CORE = ['./', './index.html', './manifest.webmanifest', './thesis-icon-180.png', './thesis-icon-192.png', './thesis-icon-512.png'];
+var CACHE = 'thesis-v4';
+var CORE = ['./', './index.html', './thesis-icon-180.png', './thesis-icon-192.png', './thesis-icon-512.png'];
 var FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
 
 self.addEventListener('install', function (e) {
@@ -36,6 +36,11 @@ self.addEventListener('fetch', function (e) {
   if (req.method !== 'GET') return;
   var url = new URL(req.url);
 
+  /* Манифест всегда берём из сети, чтобы Chrome видел изменения (цвета, иконки) и обновлял приложение */
+  if (url.origin === location.origin && /manifest\.webmanifest$/.test(url.pathname)) {
+    e.respondWith(fetch(req, { cache: 'no-store' }).catch(function () { return caches.match(req); }));
+    return;
+  }
   if (FONT_HOSTS.indexOf(url.hostname) !== -1) {          /* шрифты: сохраняем при первом онлайн-запуске */
     e.respondWith(staleWhileRevalidate(req));
     return;

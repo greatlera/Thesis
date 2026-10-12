@@ -6,8 +6,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#232227",
-  "theme_color": "#FFC341",
+  "background_color": "#77726E",
+  "theme_color": "#EFEDEA",
   "icons": [
     {
       "src": "thesis-icon-192.png",
